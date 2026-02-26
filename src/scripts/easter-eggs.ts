@@ -59,8 +59,9 @@ function initNameClick() {
 
 // JS-assembled email — obfuscated DOM to resist scraping
 function initEmail() {
-  const el = document.getElementById('sidebarEmail');
-  if (!el) return;
+  const emailEl = document.getElementById('sidebarEmail');
+  if (!emailEl) return;
+  const el = emailEl;
   const real = ['abhi', 'nav', '@', 'cs.', 'umd', '.edu'];
   const decoys = ['info', '.fake', '@', 'spam.', 'bot', '.net'];
   const addr = real.join('');
