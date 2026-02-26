@@ -1,0 +1,21 @@
+{
+  "id": "300m",
+  "title": "Revisiting Unreasonable Effectiveness of Data in Deep Learning Era",
+  "authors": [
+    "chen-sun",
+    "abhinav-shrivastava",
+    "saurabh-singh",
+    "abhinav-gupta"
+  ],
+  "venue": "ICCV",
+  "year": 2017,
+  "tags": [
+    "spotlight"
+  ],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/300m_iccv17.txt",
+    "pdf": "https://arxiv.org/pdf/1707.02968"
+  },
+  "thumbnail": "images/300m.png",
+  "date": "2017-07"
+}

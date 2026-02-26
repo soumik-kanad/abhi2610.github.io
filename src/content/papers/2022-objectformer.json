@@ -1,0 +1,30 @@
+{
+  "id": "ObjectFormer",
+  "title": "ObjectFormer for Image Manipulation Detection and Localization",
+  "authors": [
+    {
+      "name": "Junke Wang"
+    },
+    "zuxuan-wu",
+    {
+      "name": "Jingjing Chen"
+    },
+    {
+      "name": "Xintong Han"
+    },
+    "abhinav-shrivastava",
+    "ser-nam-lim",
+    {
+      "name": "Yu-Gang Jiang"
+    }
+  ],
+  "venue": "CVPR",
+  "year": 2022,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/wang2022objectformer.txt",
+    "pdf": "https://arxiv.org/abs/2203.14681"
+  },
+  "thumbnail": "images/objformer.png",
+  "date": "2022-02"
+}

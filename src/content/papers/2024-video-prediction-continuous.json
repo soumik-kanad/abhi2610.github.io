@@ -1,0 +1,17 @@
+{
+  "id": "video-prediction-continuous",
+  "title": "Video Prediction by Modeling Videos as Continuous Multi-Dimensional Processes",
+  "authors": [
+    "gaurav-shrivastava",
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2412.04929",
+    "webpage": "https://www.cs.umd.edu/~gauravsh/cvp/supp/website.html"
+  },
+  "thumbnail": null,
+  "date": "2024-02"
+}

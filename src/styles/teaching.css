@@ -1,0 +1,175 @@
+/* ============================================
+   TEACHING & SERVICE PAGE
+   ============================================ */
+
+/* --- Courses --- */
+.course-entry {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.course-entry:last-child {
+  border-bottom: none;
+}
+
+.course-name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.course-meta {
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--text-tertiary);
+  margin-top: 4px;
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.course-meta-sep {
+  margin: 0 8px;
+  opacity: 0.5;
+}
+
+.course-badge {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.course-semesters {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* --- Academic Service --- */
+.service-category {
+  margin-bottom: 8px;
+}
+
+/* Consistent grid: label on left, years on right */
+.service-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Area chair grid: bold conference + years */
+.service-grid-ac {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.service-ac-row {
+  display: flex;
+  gap: 12px;
+  padding: 5px 0;
+  font-size: 0.88rem;
+  align-items: baseline;
+}
+
+.service-ac-org {
+  font-weight: 500;
+  color: var(--text-primary);
+  min-width: 80px;
+}
+
+.service-ac-years {
+  font-weight: 300;
+  color: var(--text-tertiary);
+}
+
+.service-ac-sublabel {
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: var(--text-tertiary);
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-subtle);
+  letter-spacing: 0.02em;
+}
+
+/* Standard service list: inline text with parenthetical years */
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.service-item {
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: var(--text-secondary);
+  padding: 5px 0;
+  line-height: 1.5;
+}
+
+/* Workshop entries: grouped by name with year links */
+.workshop-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.workshop-entry {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.workshop-entry:last-child {
+  border-bottom: none;
+}
+
+.workshop-name {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.workshop-venue {
+  color: var(--text-tertiary);
+  font-weight: 300;
+}
+
+.workshop-years {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Inline compact (for reviewers) — matches group page compact-list */
+.service-inline {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--text-secondary);
+  line-height: 2.2;
+}
+
+.service-inline-item {
+  display: inline-flex;
+  align-items: baseline;
+  white-space: nowrap;
+}
+
+.service-inline-sep {
+  color: var(--text-tertiary);
+  opacity: 0.5;
+  margin: 0 6px;
+}
+
+.service-panel-detail {
+  font-weight: 300;
+  color: var(--text-tertiary);
+}

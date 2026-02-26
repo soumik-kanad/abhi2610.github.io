@@ -1,0 +1,18 @@
+{
+  "id": "wayex",
+  "title": "WAYEX: Waypoint Exploration using a Single Demonstration",
+  "authors": [
+    "mara-levy",
+    "nirat-saini",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICRA",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2407.15849",
+    "webpage": "https://waypoint-ex.github.io/"
+  },
+  "thumbnail": "https://mlevy2525.github.io/images/waypoint_teaser.png",
+  "date": "2024-01"
+}

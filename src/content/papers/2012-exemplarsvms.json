@@ -1,0 +1,22 @@
+{
+  "id": "exemplarsvms",
+  "title": "Exemplar-SVMs for Visual Object Detection, Label Transfer and Image Retrieval",
+  "authors": [
+    {
+      "name": "Tomasz Malisiewicz",
+      "url": "http://people.csail.mit.edu/tomasz/"
+    },
+    "abhinav-shrivastava",
+    "abhinav-gupta",
+    "alexei-a-efros"
+  ],
+  "venue": "ICML",
+  "year": 2012,
+  "tags": [],
+  "links": {
+    "pdf": "http://www.cs.cmu.edu/~tmalisie/projects/iccv11/malisiewicz_icml2012_abstract.pdf",
+    "slides": "http://www.cs.cmu.edu/~tmalisie/projects/iccv11/malisiewicz_icml2012_talk.pdf"
+  },
+  "thumbnail": "http://www.cs.cmu.edu/~tmalisie/projects/iccv11/exemplarsvm-trains.jpg",
+  "date": "2012-05"
+}

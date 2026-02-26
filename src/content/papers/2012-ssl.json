@@ -1,0 +1,23 @@
+{
+  "id": "ssl",
+  "title": "Constrained Semi-Supervised Learning using Attributes and Comparative Attributes",
+  "authors": [
+    "abhinav-shrivastava",
+    "saurabh-singh",
+    "abhinav-gupta"
+  ],
+  "venue": "ECCV",
+  "year": 2012,
+  "tags": [
+    "oral"
+  ],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/shrivastava_eccv12.txt",
+    "pdf": "http://graphics.cs.cmu.edu/projects/constrainedSSL/SSL.pdf",
+    "webpage": "http://graphics.cs.cmu.edu/projects/constrainedSSL/",
+    "video": "http://videolectures.net/eccv2012_shrivastava_attributes/",
+    "slides": "https://drive.google.com/uc?export=download&id=0B1bvF_UrhQBSdnlMYVhtVnV1SVU"
+  },
+  "thumbnail": "images/ssl.png",
+  "date": "2012-07"
+}

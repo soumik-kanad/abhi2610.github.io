@@ -1,0 +1,22 @@
+{
+  "id": "L2Vis",
+  "title": "A Generic Visualization Approach for Convolutional Neural Networks",
+  "authors": [
+    "ahmed-taha",
+    "xitong-yang",
+    "abhinav-shrivastava",
+    "larry-davis"
+  ],
+  "venue": "ECCV",
+  "year": 2020,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/taha2020generic.txt",
+    "pdf": "https://arxiv.org/abs/2007.09748",
+    "code": "https://github.com/ahmdtaha/constrained_attention_filter",
+    "webpage": "https://ahmdtaha.github.io/paper/eccv_ahmed_generic",
+    "video": "https://www.youtube.com/watch?v=Wpw3ewSvnFE"
+  },
+  "thumbnail": "images/l2vis_dog.gif",
+  "date": "2020-07"
+}

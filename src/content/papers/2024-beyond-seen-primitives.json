@@ -1,0 +1,18 @@
+{
+  "id": "beyond-seen-primitives",
+  "title": "Beyond Seen Primitive Concepts and Attribute-Object Compositional Learning",
+  "authors": [
+    "nirat-saini",
+    "khoi-pham",
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://openaccess.thecvf.com/content/CVPR2024/papers/Saini_Beyond_Seen_Primitive_Concepts_and_Attribute-Object_Compositional_Learning_CVPR_2024_paper.pdf",
+    "webpage": "https://ov-czsl.github.io/"
+  },
+  "thumbnail": "https://www.cs.umd.edu/~nirat/new_images/ov-czsl_teaser.jpg",
+  "date": "2024-02"
+}

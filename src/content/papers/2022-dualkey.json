@@ -1,0 +1,28 @@
+{
+  "id": "DualKey",
+  "title": "Dual-Key Multimodal Backdoors for Visual Question Answering",
+  "authors": [
+    "matthew-walmer",
+    {
+      "name": "Karan Sikka"
+    },
+    {
+      "name": "Indranil Sur"
+    },
+    "abhinav-shrivastava",
+    {
+      "name": "Susmit Jha"
+    }
+  ],
+  "venue": "CVPR",
+  "year": 2022,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/walmer2022dualkey.txt",
+    "pdf": "https://arxiv.org/abs/2112.07668",
+    "demo": "https://huggingface.co/spaces/CVPR/Dual-Key_Backdoor_Attacks",
+    "code": "https://github.com/SRI-CSL/TrinityMultimodalTrojAI"
+  },
+  "thumbnail": "images/dualkey.png",
+  "date": "2022-02"
+}

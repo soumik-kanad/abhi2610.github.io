@@ -1,0 +1,31 @@
+{
+  "id": "text-free-diffusion",
+  "title": "Do text-free diffusion models learn discriminative visual representations?",
+  "authors": [
+    "soumik-mukhopadhyay",
+    "matt-gwilliam",
+    {
+      "name": "Yosuke Yamaguchi"
+    },
+    "vatsal-agarwal",
+    "namitha-padmanabhan",
+    "archana-swaminathan",
+    {
+      "name": "Tianyi Zhou"
+    },
+    {
+      "name": "Jun Ohya"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "ECCV",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2311.17921",
+    "webpage": "https://mgwillia.github.io/diffssl/",
+    "code": "https://github.com/soumik-kanad/diffssl"
+  },
+  "thumbnail": "https://mgwillia.github.io/diffssl/imgs/diffssl_teaser.png",
+  "date": "2024-07"
+}

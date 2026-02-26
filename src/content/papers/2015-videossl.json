@@ -1,0 +1,20 @@
+{
+  "id": "videossl",
+  "title": "Watch and Learn: Semi-supervised Learning of Object Detectors from Videos",
+  "authors": [
+    "ishan-misra",
+    "abhinav-shrivastava",
+    "martial-hebert"
+  ],
+  "venue": "CVPR",
+  "year": 2015,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/videossl_cvpr15.txt",
+    "pdf": "http://arxiv.org/pdf/1505.05769v1.pdf",
+    "webpage": "http://www.cs.cmu.edu/~imisra/projects/sslVideo2015/index.html",
+    "poster": "https://www.cs.umd.edu/~abhinav/papers/posters/video_ssl.pdf"
+  },
+  "thumbnail": "images/watchlearn.png",
+  "date": "2015-02"
+}

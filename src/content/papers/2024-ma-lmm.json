@@ -1,0 +1,32 @@
+{
+  "id": "ma-lmm",
+  "title": "MA-LMM: Memory-Augmented Large Multimodal Model for Long-Term Video Understanding",
+  "authors": [
+    "bo-he",
+    "hengduo-li",
+    {
+      "name": "Young Kyun Jang"
+    },
+    {
+      "name": "Menglin Jia"
+    },
+    {
+      "name": "Xuefei Cao"
+    },
+    {
+      "name": "Anshul Shah"
+    },
+    "ser-nam-lim",
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2404.05726",
+    "webpage": "https://boheumd.github.io/MA-LMM/",
+    "code": "https://github.com/boheumd/MA-LMM"
+  },
+  "thumbnail": "https://boheumd.github.io/images/MA-LMM.png",
+  "date": "2024-02"
+}

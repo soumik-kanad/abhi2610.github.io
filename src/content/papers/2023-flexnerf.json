@@ -1,0 +1,24 @@
+{
+  "id": "FlexNeRF",
+  "title": "FlexNeRF: Photorealistic Free-viewpoint Rendering of Moving Humans from Sparse Views",
+  "authors": [
+    "vinoj-jayasundara",
+    {
+      "name": "Amit Agrawal"
+    },
+    {
+      "name": "Nicolas Heron"
+    },
+    "abhinav-shrivastava",
+    "larry-davis"
+  ],
+  "venue": "CVPR",
+  "year": 2023,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2303.14368",
+    "webpage": "https://flex-nerf.github.io/"
+  },
+  "thumbnail": "images/optimize.gif",
+  "date": "2023-02"
+}

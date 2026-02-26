@@ -1,0 +1,40 @@
+---
+interface Props {
+  name: string;
+  url?: string | null;
+  photo?: string | null;
+  role: string;
+  startYear?: number;
+  tagline?: string | null;
+  coAdvisor?: string | null;
+}
+
+const { name, url, photo, role, startYear, tagline, coAdvisor } = Astro.props;
+const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+const roleLabel = role === 'phd-student' ? 'PhD' : role === 'ms-student' ? 'MS' : role;
+const tag = startYear ? `${roleLabel} · Since ${startYear}` : roleLabel;
+---
+
+<div class="person">
+  {url ? (
+    <a href={url} target="_blank" rel="noopener" class="person-photo">
+      {photo ? <img src={photo} alt={name} loading="lazy" /> : initials}
+    </a>
+  ) : (
+    <div class="person-photo">
+      {photo ? <img src={photo} alt={name} loading="lazy" /> : initials}
+    </div>
+  )}
+  <div class="person-name">
+    {url ? <a href={url} target="_blank" rel="noopener">{name}</a> : name}
+  </div>
+  {tagline
+    ? <div class="person-tagline">{tagline}</div>
+    : <div class="person-tag">{tag}</div>}
+  {coAdvisor && (
+    <div class="person-coadvisor">w/ {typeof coAdvisor === 'string'
+      ? coAdvisor
+      : <a href={coAdvisor.url} target="_blank" rel="noopener">{coAdvisor.name}</a>}
+    </div>
+  )}
+</div>

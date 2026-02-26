@@ -1,0 +1,22 @@
+{
+  "id": "NeuralSFC",
+  "title": "Neural Space-Filling Curves",
+  "authors": [
+    "hanyu-wang",
+    "kamal-gupta",
+    "larry-davis",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ECCV",
+  "year": 2022,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/wang2022neural.txt",
+    "pdf": "https://arxiv.org/abs/2204.08453",
+    "webpage": "https://hywang66.github.io/publication/neuralsfc/",
+    "code": "https://github.com/hywang66/NeuralSFC",
+    "poster": "https://hywang66.github.io/publication/neuralsfc/NeuralSFC_poster.pdf"
+  },
+  "thumbnail": null,
+  "date": "2022-07"
+}

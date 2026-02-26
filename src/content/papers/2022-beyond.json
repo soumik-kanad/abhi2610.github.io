@@ -1,0 +1,19 @@
+{
+  "id": "Beyond",
+  "title": "Beyond Supervised vs. Unsupervised: Representative Benchmarking and Analysis of Image Representation Learning",
+  "authors": [
+    "matt-gwilliam",
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2022,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/gwilliam2022Beyond.txt",
+    "pdf": "https://arxiv.org/abs/2206.08347",
+    "webpage": "https://mgwillia.github.io/exploring-unsupervised/",
+    "code": "https://github.com/mgwillia/unsupervised-analysis"
+  },
+  "thumbnail": "https://mgwillia.github.io/exploring-unsupervised/imgs/all_frozen_results.png",
+  "date": "2022-02"
+}

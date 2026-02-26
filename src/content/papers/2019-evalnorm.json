@@ -1,0 +1,17 @@
+{
+  "id": "evalnorm",
+  "title": "EvalNorm: Estimating Batch Normalization Statistics for Evaluation",
+  "authors": [
+    "saurabh-singh",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICCV",
+  "year": 2019,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/evalnorm_preprint.txt",
+    "pdf": "https://arxiv.org/pdf/1904.06031.pdf"
+  },
+  "thumbnail": "images/bn2019.png",
+  "date": "2019-07"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "Freakency",
+  "title": "A Frequency Perspective of Adversarial Robustness",
+  "authors": [
+    "shishira-maiya",
+    "max-ehrlich",
+    "vatsal-agarwal",
+    "ser-nam-lim",
+    {
+      "name": "Tom Goldstein"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "BMVC",
+  "year": 2023,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2111.00861"
+  },
+  "thumbnail": "https://www.cs.umd.edu/~shishira/images/freq_perspective.png",
+  "date": "2023-07"
+}

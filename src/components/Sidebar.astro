@@ -1,0 +1,104 @@
+---
+const navItems = [
+  { id: 'home', label: 'Home', emoji: '🏠', href: '/',
+    subitems: [
+      { label: 'About', target: 'home-about' },
+      { label: 'News', target: 'home-news' },
+      { label: 'Funding', target: 'home-funding' },
+    ]
+  },
+  { id: 'group', label: 'Group', emoji: '🤖', href: '/group/',
+    subitems: [
+      { label: 'Current Students', target: 'group-current' },
+      { label: 'Alumni', target: 'group-alumni' },
+    ]
+  },
+  { id: 'publications', label: 'Publications', emoji: '☕', href: '/publications/',
+    subitems: [
+      { label: '2026', target: 'pub-2026' },
+      { label: '2025', target: 'pub-2025' },
+      { label: '2024', target: 'pub-2024' },
+      { label: '2023 & Earlier', target: 'pub-2023' },
+      { label: 'Patents', target: 'pub-patents' },
+    ]
+  },
+  { id: 'teaching', label: 'Teaching & Service', emoji: '🎓', href: '/teaching/',
+    subitems: [
+      { label: 'Courses', target: 'teaching-courses' },
+      { label: 'Service', target: 'teaching-service' },
+    ]
+  },
+  { id: 'awards', label: 'Awards, Talks, & Press', emoji: '🏆', href: '/awards/',
+    subitems: [
+      { label: 'Awards', target: 'awards-honors' },
+      { label: 'Talks', target: 'awards-talks' },
+      { label: 'Press', target: 'awards-press' },
+    ]
+  },
+];
+---
+
+<aside class="sidebar" id="sidebar" transition:persist="sidebar">
+  <div class="sidebar-identity">
+    <div class="sidebar-photo">
+      <img src="/images/abhinav.jpg" alt="Abhinav Shrivastava" />
+    </div>
+    <div class="sidebar-name" id="sidebarName">Abhinav Shrivastava</div>
+    <span class="sidebar-email" id="sidebarEmail"></span>
+    <div class="sidebar-text-links">
+      <a class="sidebar-tlink" href="https://scholar.google.com/citations?user=mIF9BowAAAAJ&hl=en" target="_blank" rel="noopener">google scholar</a>
+      <span class="sidebar-sep">/</span>
+      <a class="sidebar-tlink" href="https://www.semanticscholar.org/author/Abhinav-Shrivastava/1781242?q=&sort=influence&ae=false" target="_blank" rel="noopener">semantic scholar</a>
+    </div>
+    <div class="sidebar-social-links">
+      <a href="https://www.linkedin.com/in/abhi2610/" title="LinkedIn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="https://x.com/abhi2610" title="X (Twitter)" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <nav class="sidebar-nav" id="sidebarNav">
+    {navItems.map((item) => (
+      <>
+        <a
+          class="nav-item"
+          href={item.href}
+          data-page={item.id}
+        >
+          <span class="nav-emoji">{item.emoji}</span>
+          <span class="nav-label" data-text={item.label}>{item.label}</span>
+        </a>
+        {item.subitems.length > 0 && (
+          <div class="nav-subitems" data-parent={item.id}>
+            <div class="nav-subitems-inner">
+              {item.subitems.map((sub) => (
+                <a class="nav-subitem" href={`#${sub.target}`} data-target={sub.target}>
+                  {sub.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+      </>
+    ))}
+  </nav>
+
+  <div class="sidebar-footer">
+    <button class="theme-toggle" id="themeToggle">
+      <span class="theme-icon" id="theme-sun">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </span>
+      <span class="theme-icon" id="theme-moon">
+        <svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/><path d="M17 4l.5 1.5L19 6l-1.5.5L17 8l-.5-1.5L15 6l1.5-.5z" stroke-width="1"/></svg>
+      </span>
+    </button>
+    <div class="sidebar-credit">
+      <span>© 2025 Abhinav Shrivastava</span>
+      <span>Designed with Claude Code</span>
+      <span>Last updated Feb 2026</span>
+    </div>
+  </div>
+</aside>

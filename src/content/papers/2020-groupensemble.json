@@ -1,0 +1,18 @@
+{
+  "id": "GroupEnsemble",
+  "title": "Group Ensemble: Learning an Ensemble of ConvNets in a single ConvNet",
+  "authors": [
+    "hao-chen",
+    "abhinav-shrivastava"
+  ],
+  "venue": "arXiv",
+  "year": 2020,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/chen2020group.txt",
+    "pdf": "https://arxiv.org/pdf/2007.00649.pdf",
+    "code": "https://github.com/haochen-rye/ModEnsNet"
+  },
+  "thumbnail": "images/ge.png",
+  "date": "2020-07"
+}

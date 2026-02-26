@@ -1,0 +1,30 @@
+{
+  "id": "A2Summ",
+  "title": "Align and Attend: Multimodal Summarization with Dual Contrastive Losses",
+  "authors": [
+    "bo-he",
+    {
+      "name": "Jun Wang"
+    },
+    {
+      "name": "Jielin Qiu"
+    },
+    {
+      "name": "Trung Bui"
+    },
+    "abhinav-shrivastava",
+    {
+      "name": "Zhaowen Wang"
+    }
+  ],
+  "venue": "CVPR",
+  "year": 2023,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2303.07284",
+    "webpage": "https://boheumd.github.io/A2Summ",
+    "code": "https://github.com/boheumd/A2Summ"
+  },
+  "thumbnail": "https://boheumd.github.io/images/A2Summ.png",
+  "date": "2023-02"
+}

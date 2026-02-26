@@ -1,0 +1,19 @@
+{
+  "id": "eagles",
+  "title": "EAGLES: Efficient Accelerated 3D Gaussians with Lightweight EncodingS",
+  "authors": [
+    "sharath-girish",
+    "kamal-gupta",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ECCV",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2312.04564",
+    "webpage": "https://efficientgaussian.github.io/",
+    "code": "https://github.com/Sharath-girish/efficientgaussian"
+  },
+  "thumbnail": "https://efficientgaussian.github.io/static/images/approach.png",
+  "date": "2024-07"
+}

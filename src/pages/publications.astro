@@ -1,0 +1,54 @@
+---
+import Layout from '@layouts/Layout.astro';
+import PublicationCard from '@components/PublicationCard.astro';
+import { getCollection } from 'astro:content';
+import patents from '@data/patents.json';
+
+const allPapers = await getCollection('papers');
+
+// Sort by year (desc), then date (asc within year), then sortOrder, then title
+const sorted = allPapers
+  .map(entry => entry.data)
+  .sort((a, b) => {
+    if (a.year !== b.year) return b.year - a.year;
+    const dateA = a.date || `${a.year}-00`;
+    const dateB = b.date || `${b.year}-00`;
+    if (dateA !== dateB) return dateB.localeCompare(dateA);
+    const orderA = a.sortOrder ?? 999;
+    const orderB = b.sortOrder ?? 999;
+    if (orderA !== orderB) return orderA - orderB;
+    return a.title.localeCompare(b.title);
+  });
+
+// Group by year
+const years = [...new Set(sorted.map(p => p.year))].sort((a, b) => b - a);
+const byYear = new Map<number, typeof sorted>();
+for (const year of years) {
+  byYear.set(year, sorted.filter(p => p.year === year));
+}
+
+---
+
+<Layout title="Publications — Abhinav Shrivastava" description="Publications by Abhinav Shrivastava and the PI Lab. Computer vision, machine learning, and robotics papers at CVPR, ICCV, ECCV, NeurIPS, and more.">
+  <h1>Publications</h1>
+
+  {years.map(year => (
+    <>
+      <div class="pub-year section-anchor" id={`pub-${year}`}>{year}</div>
+      {byYear.get(year)!.map(paper => (
+        <PublicationCard paper={paper} />
+      ))}
+    </>
+  ))}
+
+  <h2 class="section-anchor" id="pub-patents">Patents</h2>
+  <div class="patent-list">
+    {(patents as any[]).map(p => (
+      <div class="patent-row">
+        <div class="patent-title">{p.title}</div>
+        <div class="patent-meta">{p.inventors.join(', ')}</div>
+        <div class="patent-meta">{p.number} · {p.assignee}</div>
+      </div>
+    ))}
+  </div>
+</Layout>

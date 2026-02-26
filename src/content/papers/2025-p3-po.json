@@ -1,0 +1,25 @@
+{
+  "id": "p3-po",
+  "title": "P3-PO: Prescriptive Point Priors for Visuo-Spatial Generalization of Robot Policies",
+  "authors": [
+    "mara-levy",
+    {
+      "name": "Siddhant Haldar"
+    },
+    {
+      "name": "Lerrel Pinto",
+      "url": "https://lerrelpinto.github.io/"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICRA",
+  "year": 2025,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2412.06784",
+    "webpage": "https://point-priors.github.io/",
+    "code": "https://github.com/mlevy2525/P3PO"
+  },
+  "thumbnail": "https://mlevy2525.github.io/images/p3po_teaser.jpg",
+  "date": "2025-01"
+}

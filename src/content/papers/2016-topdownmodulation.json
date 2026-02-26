@@ -1,0 +1,22 @@
+{
+  "id": "topDownModulation",
+  "title": "Beyond Skip Connections: Top-Down Modulation for Object Detection",
+  "authors": [
+    "abhinav-shrivastava",
+    "rahul-sukthankar",
+    {
+      "name": "Jitendra Malik",
+      "url": "https://people.eecs.berkeley.edu/~malik/"
+    },
+    "abhinav-gupta"
+  ],
+  "venue": "arXiv",
+  "year": 2016,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/tdm_arxiv16.txt",
+    "pdf": "https://arxiv.org/pdf/1612.06851"
+  },
+  "thumbnail": "images/topDownModulation2_compressed.png",
+  "date": "2016-12"
+}

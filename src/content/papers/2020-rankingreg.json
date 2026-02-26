@@ -1,0 +1,26 @@
+{
+  "id": "RankingReg",
+  "title": "Boosting Standard Classification Architectures Through a Ranking Regularizer",
+  "authors": [
+    "ahmed-taha",
+    {
+      "name": "Yi-Ting Chen"
+    },
+    {
+      "name": "Teruhisa Misu"
+    },
+    "abhinav-shrivastava",
+    "larry-davis"
+  ],
+  "venue": "WACV",
+  "year": 2020,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/taha2020boosting.txt",
+    "pdf": "http://openaccess.thecvf.com/content_WACV_2020/papers/Taha_Boosting_Standard_Classification_Architectures_Through_a_Ranking_Regularizer_WACV_2020_paper.pdf",
+    "webpage": "https://ahmdtaha.github.io/paper/wacv_ahmed_boosting",
+    "code": "https://github.com/ahmdtaha/softmax_triplet_loss"
+  },
+  "thumbnail": "images/triplet2020.png",
+  "date": "2019-10"
+}

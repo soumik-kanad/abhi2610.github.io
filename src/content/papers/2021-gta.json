@@ -1,0 +1,22 @@
+{
+  "id": "GTA",
+  "title": "GTA: Global Temporal Attention for Video Action Understanding",
+  "authors": [
+    "bo-he",
+    "xitong-yang",
+    "zuxuan-wu",
+    "hao-chen",
+    "ser-nam-lim",
+    "abhinav-shrivastava"
+  ],
+  "venue": "BMVC",
+  "year": 2021,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/he2020gta.txt",
+    "pdf": "https://arxiv.org/abs/2012.08510",
+    "video": "https://papertalk.org/papertalks/34382"
+  },
+  "thumbnail": "images/gta_gif.gif",
+  "date": "2021-07"
+}

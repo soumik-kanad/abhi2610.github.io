@@ -1,0 +1,27 @@
+{
+  "id": "DeepVideoInpaint",
+  "title": "Deep Video Inpainting Detection",
+  "authors": [
+    {
+      "name": "Peng Zhou",
+      "url": "https://pengzhou1108.github.io/"
+    },
+    {
+      "name": "Ning Yu"
+    },
+    "zuxuan-wu",
+    "larry-davis",
+    "abhinav-shrivastava",
+    "ser-nam-lim"
+  ],
+  "venue": "BMVC",
+  "year": 2021,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/zhou2021deep.txt",
+    "pdf": "https://arxiv.org/abs/2101.11080",
+    "video": "https://papertalk.org/papertalks/34566"
+  },
+  "thumbnail": "images/videoinpaint_small.gif",
+  "date": "2021-07"
+}

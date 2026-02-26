@@ -1,0 +1,24 @@
+{
+  "id": "ModelCompression",
+  "title": "Scalable Model Compression by Entropy Penalized Reparameterization",
+  "authors": [
+    {
+      "name": "Deniz Oktay",
+      "url": "https://www.cs.princeton.edu/~doktay/"
+    },
+    {
+      "name": "Johannes Balle"
+    },
+    "saurabh-singh",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICLR",
+  "year": 2020,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/Oktay2020Scalable.txt",
+    "pdf": "https://openreview.net/pdf?id=HkgxW0EYDS"
+  },
+  "thumbnail": "images/iclr2020.png",
+  "date": "2020-01"
+}

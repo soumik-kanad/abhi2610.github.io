@@ -1,0 +1,26 @@
+{
+  "id": "agglomerative-action-segmentation",
+  "title": "Agglomerative Clustering of Atomic Actions for Unsupervised Action Segmentation",
+  "authors": [
+    "pulkit-kumar",
+    {
+      "name": "Austin Myers"
+    },
+    {
+      "name": "Anurag Arnab"
+    },
+    {
+      "name": "David A. Ross"
+    },
+    "abhinav-shrivastava",
+    {
+      "name": "Sudheendra Vijayanarasimhan"
+    }
+  ],
+  "venue": "LPVL Workshop, CVPR",
+  "year": 2024,
+  "tags": [],
+  "links": {},
+  "thumbnail": null,
+  "date": "2024-03"
+}

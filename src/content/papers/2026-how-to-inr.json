@@ -1,0 +1,27 @@
+{
+  "id": "how-to-inr",
+  "title": "How to Design and Train Your Implicit Neural Representation for Video Compression",
+  "authors": [
+    "matt-gwilliam",
+    {
+      "name": "Roy Zhang"
+    },
+    "namitha-padmanabhan",
+    {
+      "name": "Hongyang Du"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "WACV",
+  "year": 2026,
+  "tags": [
+    "new"
+  ],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2506.24127",
+    "webpage": "https://mgwillia.github.io/vinrb/",
+    "code": "https://github.com/mgwillia/vinrb"
+  },
+  "thumbnail": "https://mgwillia.github.io/images/huvr_teaser.png",
+  "date": "2025-10"
+}

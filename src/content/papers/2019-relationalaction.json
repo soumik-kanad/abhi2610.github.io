@@ -1,0 +1,25 @@
+{
+  "id": "RelationalAction",
+  "title": "Relational Action Forecasting",
+  "authors": [
+    "chen-sun",
+    "abhinav-shrivastava",
+    "carl-vondrick",
+    "rahul-sukthankar",
+    "kevin-murphy",
+    {
+      "name": "Cordelia Schmid",
+      "url": "https://thoth.inrialpes.fr/~schmid/"
+    }
+  ],
+  "venue": "CVPR",
+  "year": 2019,
+  "tags": [
+    "best paper finalist"
+  ],
+  "links": {
+    "pdf": "https://arxiv.org/pdf/1904.04231.pdf"
+  },
+  "thumbnail": "images/dr2n.png",
+  "date": "2019-02"
+}

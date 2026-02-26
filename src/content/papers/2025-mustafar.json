@@ -1,0 +1,27 @@
+{
+  "id": "mustafar",
+  "title": "Towards Multimodal Understanding via Stable Diffusion as a Task-Aware Feature Extractor",
+  "authors": [
+    "vatsal-agarwal",
+    "matt-gwilliam",
+    {
+      "name": "Gefen Kohavi"
+    },
+    {
+      "name": "Eshan Verma"
+    },
+    {
+      "name": "Daniel Ulbricht"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "arXiv",
+  "year": 2025,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2507.07106",
+    "webpage": "https://vatsalag99.github.io/mustafar/"
+  },
+  "thumbnail": "https://vatsalag99.github.io/images/diffvlm_teaser.png",
+  "date": "2025-07"
+}

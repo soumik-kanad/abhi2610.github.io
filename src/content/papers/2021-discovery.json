@@ -1,0 +1,19 @@
+{
+  "id": "discovery",
+  "title": "The Pursuit of Knowledge: Discovering and Localizing Novel Categories using Dual Memory",
+  "authors": [
+    "saketh-rambhatla",
+    "rama-chellappa",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICCV",
+  "year": 2021,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/saketh2021pursuit.txt",
+    "webpage": "https://rssaketh.github.io/project_pages/obj_disc.html",
+    "pdf": "https://arxiv.org/abs/2105.01652"
+  },
+  "thumbnail": "images/saketh2021pursuit.png",
+  "date": "2021-07"
+}

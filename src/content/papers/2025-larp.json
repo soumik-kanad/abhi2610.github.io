@@ -1,0 +1,23 @@
+{
+  "id": "larp",
+  "title": "LARP: Tokenizing Videos with a Learned Autoregressive Generative Prior",
+  "authors": [
+    "hanyu-wang",
+    "saksham-suri",
+    "yixuan-ren",
+    "hao-chen",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICLR",
+  "year": 2025,
+  "tags": [
+    "oral"
+  ],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2410.21264",
+    "webpage": "https://hywang66.github.io/larp/index.html",
+    "code": "https://github.com/hywang66/LARP"
+  },
+  "thumbnail": "https://hywang66.github.io/larp/static/images/teaser.jpg",
+  "date": "2025-01"
+}

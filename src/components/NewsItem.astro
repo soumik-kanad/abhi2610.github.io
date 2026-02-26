@@ -1,0 +1,14 @@
+---
+interface Props {
+  date: string;
+  text: string;
+  url?: string | null;
+}
+
+const { date, text, url } = Astro.props;
+---
+
+<div class="news-item">
+  <span class="news-date">{date}</span>
+  <span class="news-text" set:html={text} />
+</div>

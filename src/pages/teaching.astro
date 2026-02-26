@@ -1,0 +1,237 @@
+---
+import Layout from '@layouts/Layout.astro';
+import teachingData from '@data/teaching.json';
+import serviceData from '@data/service.json';
+const teaching = teachingData as any[];
+const service = serviceData as any[];
+
+// Group teaching by course, aggregate semesters with URLs
+const courseMap = new Map<string, {
+  course: string;
+  courseNumber: string | null;
+  role: string;
+  university: string;
+  designed: boolean;
+  instructor?: string;
+  semesters: { label: string; url: string | null }[];
+  startYear: number;
+}>();
+
+for (const t of teaching) {
+  const key = t.course;
+  if (!courseMap.has(key)) {
+    courseMap.set(key, {
+      course: t.course,
+      courseNumber: t.courseNumber,
+      role: t.role === 'teaching-assistant' ? 'TA' : 'Instructor',
+      university: t.university === 'University of Maryland' ? 'UMD' : t.university === 'Carnegie Mellon University' ? 'CMU' : t.university,
+      designed: t.designed || false,
+      instructor: t.instructor,
+      semesters: [],
+      startYear: t.year,
+    });
+  }
+  courseMap.get(key)!.semesters.push({
+    label: t.semester,
+    url: t.url,
+  });
+}
+const courses = [...courseMap.values()];
+
+// Only show instructor courses (skip TA roles)
+const instructorCourses = courses.filter(c => c.role === 'Instructor');
+
+// Group workshops by name, collect year+url pairs
+const workshopItems = service.filter((s: any) => s.type === 'organizer' && !s.role.includes('Chair'));
+const workshopMap = new Map<string, { workshop: string; venue: string; years: { year: string; url: string | null }[] }>();
+for (const w of workshopItems) {
+  const key = `${w.workshop}|${w.venue}`;
+  if (!workshopMap.has(key)) {
+    workshopMap.set(key, { workshop: w.workshop, venue: w.venue, years: [] });
+  }
+  workshopMap.get(key)!.years.push({ year: w.years, url: w.url || null });
+}
+const workshops = [...workshopMap.values()];
+
+// Combined editorial + leadership + area chair + reviewing
+const editorialItems = service.filter((s: any) => s.type === 'editorial-board');
+const leadershipItems = service.filter((s: any) => s.type === 'organizer' && s.role.includes('Chair'));
+const acItems = service.filter((s: any) => s.type === 'area-chair');
+const reviewerItems = service.filter((s: any) => s.type === 'reviewer');
+
+// Remaining categories
+const serviceCategories = [
+  { key: 'panel', label: 'Grant & Proposal Review', filter: (s: any) => s.type === 'panel-reviewer' },
+  { key: 'university', label: 'University Service', filter: (s: any) => s.type === 'university-service' },
+];
+
+const groupedService = serviceCategories.map(cat => ({
+  ...cat,
+  items: service.filter(cat.filter),
+})).filter(cat => cat.items.length > 0);
+---
+
+<Layout title="Teaching & Service — Abhinav Shrivastava" description="Courses taught at UMD including Introduction to Deep Learning and Computer Vision. Academic service as area chair, reviewer, and workshop organizer.">
+  <h1>Teaching & Service</h1>
+
+  <!-- COURSES -->
+  <h2 class="section-anchor" id="teaching-courses">Courses</h2>
+
+  {instructorCourses.map(c => (
+    <div class="course-entry">
+      <div class="course-name">{c.course}</div>
+      <div class="course-meta">
+        {c.courseNumber && <span>{c.courseNumber}</span>}
+        <span class="course-meta-sep">·</span>
+        {c.university}
+        {c.designed && (
+          <>
+            <span class="course-meta-sep">·</span>
+            <span class="course-badge">designed this course</span>
+          </>
+        )}
+      </div>
+      <div class="course-semesters">
+        {c.semesters.map((sem, i) => (
+          <>
+            {sem.url ? (
+              <a href={sem.url} class="pub-link" target="_blank" rel="noopener">{sem.label}</a>
+            ) : (
+              <span>{sem.label}</span>
+            )}
+            {i < c.semesters.length - 1 && <span class="pub-sep">/</span>}
+          </>
+        ))}
+      </div>
+    </div>
+  ))}
+
+  <!-- ACADEMIC SERVICE -->
+  <h2 class="section-anchor" id="teaching-service">Academic Service</h2>
+
+  <!-- Editorial & Program Committee (merged) -->
+  <div class="service-category">
+    <h3>Editorial & Program Committee</h3>
+    <div class="service-grid-ac">
+      {editorialItems.map(s => (
+        <div class="service-ac-row">
+          <span class="service-ac-org">{s.role}, {s.organization}</span>
+          <span class="service-ac-years">{s.years}</span>
+        </div>
+      ))}
+      {leadershipItems.map(s => (
+        <div class="service-ac-row">
+          <span class="service-ac-org">{s.role}, {s.organization}</span>
+          <span class="service-ac-years">{s.years}</span>
+        </div>
+      ))}
+      <div class="service-ac-sublabel">Area Chair</div>
+      {acItems.map(s => (
+        <div class="service-ac-row">
+          <span class="service-ac-org">{s.organization}</span>
+          <span class="service-ac-years">{s.years}</span>
+        </div>
+      ))}
+      <div class="service-ac-sublabel">Reviewer</div>
+      <div class="service-inline">
+        {reviewerItems.map((s, i) => (
+          <>
+            <span class="service-inline-item">
+              {s.organization}{s.years ? ` (${s.years})` : ''}
+            </span>
+            {i < reviewerItems.length - 1 && <span class="service-inline-sep"> · </span>}
+          </>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <!-- Workshop Organization -->
+  <div class="service-category">
+    <h3>Workshop Organization</h3>
+    <div class="workshop-list">
+      {workshops.map(w => (
+        <div class="workshop-entry">
+          <div class="workshop-name">{w.workshop}<span class="workshop-venue"> — {w.venue}</span></div>
+          <div class="workshop-years">
+            {w.years.map((y, i) => (
+              <>
+                {y.url ? (
+                  <a href={y.url} class="pub-link" target="_blank" rel="noopener">{y.year}</a>
+                ) : (
+                  <span>{y.year}</span>
+                )}
+                {i < w.years.length - 1 && <span class="pub-sep">/</span>}
+              </>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Remaining categories -->
+  {groupedService.map(cat => (
+    <div class="service-category">
+      <h3>{cat.label}</h3>
+      {cat.key === 'reviewer' ? (
+        <div class="service-inline">
+          {cat.items.map((s, i) => (
+            <>
+              <span class="service-inline-item">
+                {s.organization}{s.years ? ` (${s.years})` : ''}
+              </span>
+              {i < cat.items.length - 1 && <span class="service-inline-sep"> · </span>}
+            </>
+          ))}
+        </div>
+      ) : cat.key === 'organizer' ? (
+        <div class="workshop-list">
+          {workshops.map(w => (
+            <div class="workshop-entry">
+              <div class="workshop-name">{w.workshop}<span class="workshop-venue"> — {w.venue}</span></div>
+              <div class="workshop-years">
+                {w.years.map((y, i) => (
+                  <>
+                    {y.url ? (
+                      <a href={y.url} class="pub-link" target="_blank" rel="noopener">{y.year}</a>
+                    ) : (
+                      <span>{y.year}</span>
+                    )}
+                    {i < w.years.length - 1 && <span class="pub-sep">/</span>}
+                  </>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : cat.key === 'panel' ? (
+        <div class="service-grid-ac">
+          {cat.items.map(s => (
+            <div class="service-ac-row">
+              <span class="service-ac-org">{s.role}{s.organization ? <span class="service-panel-detail"> ({s.organization})</span> : ''}</span>
+              {s.years && <span class="service-ac-years">{s.years}</span>}
+            </div>
+          ))}
+        </div>
+      ) : cat.key === 'university' ? (
+        <div class="service-grid-ac">
+          {cat.items.map(s => (
+            <div class="service-ac-row">
+              <span class="service-ac-org">{s.label}</span>
+              {s.years && <span class="service-ac-years">{s.years}</span>}
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div class="service-list">
+          {cat.items.map(s => (
+            <div class="service-item">
+              {s.role}, {s.organization}{s.years ? ` (${s.years})` : ''}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  ))}
+</Layout>

@@ -1,0 +1,21 @@
+{
+  "id": "SparseDet",
+  "title": "SparseDet: Improving Sparsely Annotated Object Detection with Pseudo-positive Mining",
+  "authors": [
+    "saksham-suri",
+    "saketh-rambhatla",
+    "rama-chellappa",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICCV",
+  "year": 2023,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2201.04620",
+    "webpage": "https://www.cs.umd.edu/~sakshams/SparseDet/",
+    "poster": "https://rssaketh.github.io/data/sparsedet_poster.pdf",
+    "code": "https://github.com/saksham-s/SparseDet"
+  },
+  "thumbnail": "http://www.cs.umd.edu/~sakshams/SparseDet/resources/teaser.png",
+  "date": "2023-07"
+}

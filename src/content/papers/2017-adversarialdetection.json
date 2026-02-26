@@ -1,0 +1,22 @@
+{
+  "id": "adversarialDetection",
+  "title": "A-Fast-RCNN: Hard Positive Generation via Adversary for Object Detection",
+  "authors": [
+    {
+      "name": "Xiaolong Wang",
+      "url": "http://www.cs.cmu.edu/~xiaolonw/"
+    },
+    "abhinav-shrivastava",
+    "abhinav-gupta"
+  ],
+  "venue": "CVPR",
+  "year": 2017,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/adversarial_detection_cvpr17.txt",
+    "pdf": "https://arxiv.org/pdf/1704.03414.pdf",
+    "code": "https://github.com/xiaolonw/adversarial-frcnn"
+  },
+  "thumbnail": "images/adversarialDetection.png",
+  "date": "2017-02"
+}

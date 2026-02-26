@@ -1,0 +1,242 @@
+---
+/**
+ * Homepage — "tl;dr + Structured Bio"
+ * Positions with one-liners → gold rule → structured credentials → news → funding
+ */
+import Layout from '@layouts/Layout.astro';
+import NewsItem from '@components/NewsItem.astro';
+import news from '@data/news.json';
+// Curated funding display — govt shows programs, industry shows grant types
+const fundingEntries: [string, string][] = [
+  ['NSF', 'CAREER, EFRI, TRAILS (AI Institute)'],
+  ['IARPA', 'VideoLINCS, SMART, WRIVA, DIVA'],
+  ['DARPA', 'SAIL-ON, SemaFor, MediFor, GARD'],
+  ['NGA', 'Research Contract'],
+  ['Air Force', 'STTR Phase I & II'],
+  ['NAIRR', 'Pilot Resource Allocation'],
+  ['Amazon', 'Research Awards'],
+  ['Apple', 'Research Award'],
+  ['Google', 'Gifts'],
+  ['Meta', 'Multi-year Contract'],
+  ['Adobe', 'Gifts'],
+  ['Dolby', 'Seed Grant'],
+  ['Honda', 'Multi-year Contract'],
+  ['MIPS', 'Maryland Industrial Partnerships'],
+  ['AIM', 'Seed Grant'],
+];
+const recentNews = (news as any[]).slice(0, 5);
+---
+
+<Layout>
+  <h2 class="section-anchor home-opener" id="home-about">tl;dr</h2>
+
+  <div class="positions">
+    <div class="pos">
+      <div class="pos-title"><a href="https://www.cs.umd.edu/people/abhinav2" target="_blank" rel="noopener">Associate Professor,</a><br/><a href="https://www.cs.umd.edu/" target="_blank" rel="noopener">University of Maryland, College Park</a></div>
+      <div class="pos-meta"><a href="https://www.cs.umd.edu/" target="_blank" rel="noopener">Department of Computer Science</a> · <a href="https://www.umiacs.umd.edu/" target="_blank" rel="noopener">UMIACS</a></div>
+      <div class="pos-desc">Running the <a href="/group/">Perception &amp; Intelligence (PI) Lab</a>, focusing on computer vision, machine learning, &amp; robotics.</div>
+    </div>
+    <div class="pos">
+      <div class="pos-title">Co-Founder & CEO,<br/><span class="stealth"><span class="stealth-bracket">&lt;</span>stealth startup<span class="stealth-bracket">&gt;</span></span></div>
+      <div class="pos-desc">Building next-gen AI-native video infrastructure.</div>
+    </div>
+  </div>
+
+  <hr class="home-rule" />
+
+  <div class="home-bio">
+    <p>
+      Previously at Google Research.
+      PhD from the <a href="https://www.ri.cmu.edu/" target="_blank" rel="noopener">Robotics Institute at Carnegie Mellon University</a>,
+      where I was advised by <a href="https://www.cs.cmu.edu/~abhinavg/" target="_blank" rel="noopener">Abhinav Gupta</a> and supported by the Microsoft Research PhD Fellowship.
+      MS, also from the <a href="https://www.ri.cmu.edu/" target="_blank" rel="noopener">Robotics Institute</a>, with <a href="https://people.eecs.berkeley.edu/~efros/" target="_blank" rel="noopener">Alyosha Efros</a> and <a href="https://www.cs.cmu.edu/about-scs/about-dean" target="_blank" rel="noopener">Martial Hebert</a>.
+    </p>
+    <a href="/bio/" class="bio-more">full bio →</a>
+  </div>
+
+  <h2 class="section-anchor" id="home-news">What's new</h2>
+  <div class="news-list">
+    {recentNews.map((item: any) => (
+      <NewsItem date={item.date} text={item.text} url={item.url} />
+    ))}
+  </div>
+
+  <h2 class="section-anchor" id="home-funding">Funding</h2>
+  <!-- Two-column list -->
+  <div class="funding-list">
+    {fundingEntries.map(([agency, detail]) => (
+      <div class="funding-row">
+        <span class="funding-name">{agency}</span>
+        <span class="funding-detail">{detail}</span>
+      </div>
+    ))}
+  </div>
+
+</Layout>
+
+<style>
+  /* Reduce top margin for opening h2 */
+  .home-opener {
+    margin-top: 0;
+  }
+
+  /* === Positions === */
+  .positions {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: none;
+  }
+
+  .pos-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--text-primary);
+    line-height: 1.4;
+  }
+
+  .pos-title :global(a) {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .pos-title :global(a:hover) {
+    color: var(--accent-blue);
+  }
+
+  .pos-meta {
+    font-size: 0.82rem;
+    font-weight: 300;
+    color: var(--text-tertiary);
+    margin-top: 6px;
+    letter-spacing: 0.01em;
+  }
+
+  .pos-meta :global(a) {
+    color: var(--text-tertiary);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .pos-meta :global(a:hover) {
+    color: var(--accent-blue);
+  }
+
+  .pos-desc {
+    font-size: 0.92rem;
+    font-weight: 300;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-top: 4px;
+  }
+
+  .pos-desc :global(a) {
+    color: var(--accent-blue);
+    font-weight: 400;
+    transition: color 0.2s;
+  }
+
+  .pos-desc :global(a:hover) {
+    color: var(--accent-gold);
+  }
+
+  /* === Stealth blur easter egg === */
+  .stealth {
+    filter: blur(4px);
+    transition: filter 0.2s ease;
+    cursor: default;
+  }
+
+  .stealth:hover {
+    filter: blur(0);
+  }
+
+  .stealth-bracket {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1.05em;
+    font-weight: 300;
+    color: var(--text-tertiary);
+  }
+
+  /* === Gold rule === */
+  .home-rule {
+    border: none;
+    height: 2px;
+    width: 48px;
+    background: var(--accent-gold);
+    margin: 36px 0 32px;
+    border-radius: 1px;
+    opacity: 0.5;
+  }
+
+  /* === Background bio === */
+  .home-bio p {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--text-secondary);
+    line-height: 1.85;
+    max-width: none;
+  }
+
+  .home-bio :global(a) {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .home-bio :global(a:hover) {
+    color: var(--accent-blue);
+  }
+
+  .home-bio :global(.bio-more) {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--accent-blue);
+    margin-top: 16px;
+    transition: color 0.2s;
+  }
+
+  .home-bio :global(.bio-more:hover) {
+    color: var(--accent-gold);
+  }
+
+  /* === Funding list === */
+  .funding-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .funding-row {
+    display: flex;
+    gap: 24px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-subtle);
+    transition: all 0.25s ease;
+  }
+
+  .funding-row:last-child {
+    border-bottom: none;
+  }
+
+  .funding-row:hover {
+    padding-left: 8px;
+  }
+
+  .funding-name {
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    min-width: 90px;
+    flex-shrink: 0;
+  }
+
+  .funding-detail {
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: var(--text-tertiary);
+  }
+
+</style>

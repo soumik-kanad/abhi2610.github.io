@@ -1,0 +1,27 @@
+{
+  "id": "content-aware-color-editing",
+  "title": "Content-Aware Image Color Editing with Auxiliary Color Restoration Tasks",
+  "authors": [
+    "yixuan-ren",
+    {
+      "name": "Jing Shi"
+    },
+    {
+      "name": "Zhifei Zhang"
+    },
+    {
+      "name": "Yifei Fan"
+    },
+    "zhe-lin",
+    "bo-he",
+    "abhinav-shrivastava"
+  ],
+  "venue": "WACV",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://openaccess.thecvf.com/content/WACV2024/papers/Ren_Content-Aware_Image_Color_Editing_With_Auxiliary_Color_Restoration_Tasks_WACV_2024_paper.pdf"
+  },
+  "thumbnail": "https://ryx19th.github.io/images/regional_2_low_res.png",
+  "date": "2023-10"
+}

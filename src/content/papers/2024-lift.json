@@ -1,0 +1,20 @@
+{
+  "id": "lift",
+  "title": "LiFT: A Surprisingly Simple Lightweight Feature Transform for Dense ViT Descriptors",
+  "authors": [
+    "saksham-suri",
+    "matthew-walmer",
+    "kamal-gupta",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ECCV",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2403.14625",
+    "webpage": "https://www.cs.umd.edu/~sakshams/LiFT/",
+    "code": "https://github.com/saksham-s/lift"
+  },
+  "thumbnail": null,
+  "date": "2024-07"
+}

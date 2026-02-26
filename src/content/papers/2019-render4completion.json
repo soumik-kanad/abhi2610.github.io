@@ -1,0 +1,23 @@
+{
+  "id": "Render4Completion",
+  "title": "Render4Completion: Synthesizing Multi-view Depth Maps for 3D Shape Completion",
+  "authors": [
+    {
+      "name": "Tao Hu"
+    },
+    {
+      "name": "Zhizhong Han"
+    },
+    "abhinav-shrivastava",
+    "matthias-zwicker"
+  ],
+  "venue": "GeoMDL Workshop, ICCV",
+  "year": 2019,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/hu2019render4completion.txt",
+    "pdf": "https://arxiv.org/pdf/1904.08366.pdf"
+  },
+  "thumbnail": "images/render.png",
+  "date": "2019-08"
+}

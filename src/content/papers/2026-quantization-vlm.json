@@ -1,0 +1,28 @@
+{
+  "id": "quantization-vlm",
+  "title": "Towards Understanding Best Practices for Quantization of Vision-Language Models",
+  "authors": [
+    {
+      "name": "Gautom Das"
+    },
+    {
+      "name": "Vincent La"
+    },
+    {
+      "name": "Ethan Lau"
+    },
+    "abhinav-shrivastava",
+    "matt-gwilliam"
+  ],
+  "venue": "arXiv",
+  "year": 2026,
+  "tags": [
+    "new"
+  ],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2601.15287",
+    "code": "https://github.com/gautomdas/mmq"
+  },
+  "thumbnail": null,
+  "date": "2026-01"
+}

@@ -1,0 +1,78 @@
+---
+import Layout from '@layouts/Layout.astro';
+import awardsData from '@data/awards.json';
+import mediaData from '@data/media.json';
+import talksData from '@data/talks.json';
+
+const awards = (awardsData as any[]).sort((a, b) => b.year - a.year);
+const media = mediaData as any[];
+const talks = talksData as any[];
+
+// Group awards by year (descending)
+const awardsByYear = new Map<number, any[]>();
+for (const a of awards) {
+  if (!awardsByYear.has(a.year)) awardsByYear.set(a.year, []);
+  awardsByYear.get(a.year)!.push(a);
+}
+const awardYears = [...awardsByYear.entries()].sort((a, b) => b[0] - a[0]);
+
+// Group talks by year (descending)
+const talksByYear = new Map<number, typeof talks>();
+for (const t of talks) {
+  if (!talksByYear.has(t.year)) talksByYear.set(t.year, []);
+  talksByYear.get(t.year)!.push(t);
+}
+const talkYears = [...talksByYear.entries()].sort((a, b) => b[0] - a[0]);
+---
+
+<Layout title="Awards, Talks & Press — Abhinav Shrivastava" description="Awards including NSF CAREER, best paper awards at WACV and CVPR. Invited talks, White House presentation, and press coverage in Forbes, BBC, CNN, and more.">
+  <h1>Awards, Talks, & Press</h1>
+
+  <h2 class="section-anchor" id="awards-honors">Awards & Honors</h2>
+  <div class="talks-grid">
+    {awardYears.map(([year, yearAwards]) => (
+      <div class="talks-year-row">
+        <div class="talks-year">{year}</div>
+        <div class="talks-list">
+          {yearAwards.map((award: any) => (
+            <div class="talk-entry">
+              <span class="talk-title">{award.title}</span>
+              {award.description && <span class="talk-venue">{award.description}</span>}
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <h2 class="section-anchor" id="awards-talks">Invited Talks</h2>
+  <div class="talks-grid">
+    {talkYears.map(([year, yearTalks]) => (
+      <div class="talks-year-row">
+        <div class="talks-year">{year}</div>
+        <div class="talks-list">
+          {yearTalks.map((t: any) => (
+            <div class="talk-entry">
+              <span class="talk-title">{t.title}</span>
+              <span class="talk-venue">{t.venue}{t.location ? `, ${t.location}` : ''}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <h2 class="section-anchor" id="awards-press">Press & Media</h2>
+  {media.map(item => (
+    <div class="press-item">
+      <span class="press-outlet">{item.outlet}</span>
+      <span class="press-title">
+        {item.url ? (
+          <a href={item.url} target="_blank" rel="noopener">{item.title}</a>
+        ) : (
+          item.title
+        )}
+      </span>
+    </div>
+  ))}
+</Layout>

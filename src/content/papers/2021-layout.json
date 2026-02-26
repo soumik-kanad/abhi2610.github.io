@@ -1,0 +1,29 @@
+{
+  "id": "Layout",
+  "title": "Layout Generation and Completion with Self-attention",
+  "authors": [
+    "kamal-gupta",
+    {
+      "name": "Alessandro Achille"
+    },
+    {
+      "name": "Justin Lazarow"
+    },
+    "larry-davis",
+    {
+      "name": "Vijay Mahadevan"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICCV",
+  "year": 2021,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/gupta2020layouttransformer.txt",
+    "pdf": "https://arxiv.org/abs/2006.14615",
+    "webpage": "https://kampta.github.io/layout/",
+    "code": "https://github.com/kampta/DeepLayout"
+  },
+  "thumbnail": "https://kampta.github.io/images/layout/layout_teasor.jpg",
+  "date": "2021-07"
+}

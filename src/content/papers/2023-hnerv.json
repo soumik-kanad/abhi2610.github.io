@@ -1,0 +1,20 @@
+{
+  "id": "HNeRV",
+  "title": "HNeRV: A Hybrid Neural Representation for Videos",
+  "authors": [
+    "hao-chen",
+    "matt-gwilliam",
+    "ser-nam-lim",
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2023,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2304.02633",
+    "webpage": "https://haochen-rye.github.io/HNeRV",
+    "code": "https://github.com/haochen-rye/HNeRV.git"
+  },
+  "thumbnail": "https://haochen-rye.github.io/HNeRV/img/HNeRV-ICLR-teaser-bottom.jpg",
+  "date": "2023-02"
+}

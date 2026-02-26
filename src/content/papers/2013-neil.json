@@ -1,0 +1,25 @@
+{
+  "id": "neil",
+  "title": "NEIL: Extracting Visual Knowledge from Web Data",
+  "authors": [
+    "xinlei-chen",
+    "abhinav-shrivastava",
+    "abhinav-gupta"
+  ],
+  "venue": "ICCV",
+  "year": 2013,
+  "tags": [
+    "oral"
+  ],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/neil_iccv13.txt",
+    "pdf": "http://xinleic.xyz/papers/iccv13.pdf",
+    "webpage": "http://neil-kb.com/",
+    "code": "https://github.com/endernewton/subdiscover",
+    "video": "http://techtalks.tv/talks/neil-extracting-visual-knowledge-from-web-data/59408/",
+    "poster": "http://xinleic.xyz/docs/neil/NEIL_poster.pdf",
+    "slides": "https://drive.google.com/uc?export=download&id=0B1bvF_UrhQBSZGVOcHpGcklrZTQ"
+  },
+  "thumbnail": "images/neil.png",
+  "date": "2013-07"
+}

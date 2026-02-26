@@ -1,0 +1,26 @@
+{
+  "id": "midlevel",
+  "title": "Mid-level Elements for Object Detection",
+  "authors": [
+    {
+      "name": "Aayush Bansal",
+      "url": "http://www.cs.cmu.edu/~aayushb/"
+    },
+    "abhinav-shrivastava",
+    {
+      "name": "Carl Doersch",
+      "url": "http://www.cs.cmu.edu/~cdoersch/"
+    },
+    "abhinav-gupta"
+  ],
+  "venue": "arXiv",
+  "year": 2015,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/midlevel_arxiv15.txt",
+    "pdf": "http://arxiv.org/pdf/1504.07284",
+    "supplement": "http://www.cs.cmu.edu/~aayushb/pubs/analysis_mid_obj.pdf"
+  },
+  "thumbnail": "images/midleveldetect.png",
+  "date": "2015-04"
+}

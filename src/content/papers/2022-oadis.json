@@ -1,0 +1,22 @@
+{
+  "id": "OADis",
+  "title": "Disentangling Visual Embeddings for Attributes and Objects",
+  "authors": [
+    "nirat-saini",
+    "khoi-pham",
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2022,
+  "tags": [
+    "oral"
+  ],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/saini2022disentangling.txt",
+    "pdf": "https://arxiv.org/abs/2205.08536",
+    "webpage": "https://www.cs.umd.edu/~nirat/OADis/oadis.html",
+    "code": "https://github.com/nirat1606/OADis"
+  },
+  "thumbnail": "images/oadis.gif",
+  "date": "2022-02"
+}

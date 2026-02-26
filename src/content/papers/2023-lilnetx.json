@@ -1,0 +1,21 @@
+{
+  "id": "lilnetx",
+  "title": "LilNetX: Lightweight Networks with EXtreme Model Compression and Structured Sparsification",
+  "authors": [
+    "sharath-girish",
+    "kamal-gupta",
+    "saurabh-singh",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICLR",
+  "year": 2023,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/pham2022improving.txt",
+    "pdf": "https://openreview.net/pdf?id=NVZvalzCLg",
+    "webpage": "https://sharath-girish.github.io/publication/lilnetx/",
+    "code": "https://github.com/Sharath-girish/LilNetX"
+  },
+  "thumbnail": "images/lilnetx.png",
+  "date": "2023-01"
+}

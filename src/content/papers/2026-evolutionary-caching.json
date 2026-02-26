@@ -1,0 +1,21 @@
+{
+  "id": "evolutionary-caching",
+  "title": "Evolutionary Caching to Accelerate Your Off-the-Shelf Diffusion Model",
+  "authors": [
+    "anirud-aggarwal",
+    "abhinav-shrivastava",
+    "matt-gwilliam"
+  ],
+  "venue": "ICLR",
+  "year": 2026,
+  "tags": [
+    "new"
+  ],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2506.15682",
+    "webpage": "https://aniaggarwal.github.io/ecad/",
+    "code": "https://github.com/AniAggarwal/ecad"
+  },
+  "thumbnail": "https://aniaggarwal.github.io/ecad/static/images/teaser.png",
+  "date": "2026-01"
+}

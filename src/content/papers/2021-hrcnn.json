@@ -1,0 +1,18 @@
+{
+  "id": "HRCNN",
+  "title": "HR-RCNN: Hierarchical Relational Reasoning for Object Detection",
+  "authors": [
+    "hao-chen",
+    "abhinav-shrivastava"
+  ],
+  "venue": "BMVC",
+  "year": 2021,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/chen2021hr.txt",
+    "pdf": "https://arxiv.org/abs/2110.13892",
+    "video": "https://papertalk.org/papertalks/34506"
+  },
+  "thumbnail": "images/hrcnn.png",
+  "date": "2021-07"
+}

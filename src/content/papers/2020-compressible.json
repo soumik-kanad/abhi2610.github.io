@@ -1,0 +1,29 @@
+{
+  "id": "Compressible",
+  "title": "End-to-end Learning of Compressible Features",
+  "authors": [
+    "saurabh-singh",
+    {
+      "name": "Sami Abu-El-Haija"
+    },
+    {
+      "name": "Nick Johnston"
+    },
+    {
+      "name": "Johannes Balle"
+    },
+    "abhinav-shrivastava",
+    {
+      "name": "George Toderici"
+    }
+  ],
+  "venue": "ICIP",
+  "year": 2020,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/singh2020end.txt",
+    "pdf": "https://arxiv.org/abs/2007.11797"
+  },
+  "thumbnail": "images/icip2020.png",
+  "date": "2020-05"
+}

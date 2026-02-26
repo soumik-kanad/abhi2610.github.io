@@ -1,0 +1,23 @@
+{
+  "id": "crossStitch",
+  "title": "Cross-stitch Networks for Multi-task Learning",
+  "authors": [
+    "ishan-misra",
+    "abhinav-shrivastava",
+    "abhinav-gupta",
+    "martial-hebert"
+  ],
+  "venue": "CVPR",
+  "year": 2016,
+  "tags": [
+    "spotlight"
+  ],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/crossstitch_cvpr16.txt",
+    "pdf": "http://arxiv.org/pdf/1604.03539",
+    "poster": "https://www.cs.umd.edu/~abhinav/papers/posters/cross-stitch.pdf",
+    "slides": "https://drive.google.com/uc?export=download&id=0B1bvF_UrhQBSZWRDNGFMdzdiRk0"
+  },
+  "thumbnail": "images/multi-task_compressed.png",
+  "date": "2016-02"
+}

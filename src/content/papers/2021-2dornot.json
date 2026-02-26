@@ -1,0 +1,19 @@
+{
+  "id": "2DorNot",
+  "title": "2D or not 2D? Adaptive 3D Convolution Selection for Efficient Video Recognition",
+  "authors": [
+    "hengduo-li",
+    "zuxuan-wu",
+    "abhinav-shrivastava",
+    "larry-davis"
+  ],
+  "venue": "CVPR",
+  "year": 2021,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/bodla2021hierarchical.txt",
+    "pdf": "https://arxiv.org/abs/2012.14950"
+  },
+  "thumbnail": "images/2DorNot.png",
+  "date": "2021-02"
+}

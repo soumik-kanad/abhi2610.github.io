@@ -1,0 +1,22 @@
+{
+  "id": "LSR",
+  "title": "Learned Spatial Representations for Few-shot Talking-Head Synthesis",
+  "authors": [
+    "moustafa-meshry",
+    "saksham-suri",
+    "larry-davis",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICCV",
+  "year": 2021,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/meshry2021learned.txt",
+    "webpage": "http://www.cs.umd.edu/~mmeshry/projects/lsr/",
+    "pdf": "https://arxiv.org/abs/2104.14557",
+    "video": "https://www.youtube.com/watch?v=eL_5YLixxrQ&feature=youtu.be",
+    "code": "https://github.com/MoustafaMeshry/lsr"
+  },
+  "thumbnail": null,
+  "date": "2021-07"
+}

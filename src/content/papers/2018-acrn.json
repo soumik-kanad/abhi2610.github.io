@@ -1,0 +1,24 @@
+{
+  "id": "acrn",
+  "title": "Actor-centric Relation Network",
+  "authors": [
+    "chen-sun",
+    "abhinav-shrivastava",
+    "carl-vondrick",
+    "kevin-murphy",
+    "rahul-sukthankar",
+    {
+      "name": "Cordelia Schmid",
+      "url": "https://thoth.inrialpes.fr/~schmid/"
+    }
+  ],
+  "venue": "ECCV",
+  "year": 2018,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/acrn_eccv18.txt",
+    "pdf": "https://arxiv.org/pdf/1807.10982.pdf"
+  },
+  "thumbnail": "images/arcn.png",
+  "date": "2018-07"
+}

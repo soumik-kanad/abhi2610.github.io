@@ -1,0 +1,32 @@
+{
+  "id": "NIRVANA",
+  "title": "NIRVANA: Neural Implicit Representations of Videos with Adaptive Networks and Autoregressive Patch-wise Modeling",
+  "authors": [
+    "shishira-maiya",
+    "sharath-girish",
+    "max-ehrlich",
+    "hanyu-wang",
+    {
+      "name": "Kwot Sin Lee"
+    },
+    {
+      "name": "Patrick Poirson"
+    },
+    {
+      "name": "Pengxiang Wu"
+    },
+    {
+      "name": "Chen Wang"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2023,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2212.14593",
+    "webpage": "https://www.cs.umd.edu/~shishira/Nirvana/nirvana.html"
+  },
+  "thumbnail": "http://www.cs.umd.edu/~shishira/images/nirvana.png",
+  "date": "2023-02"
+}

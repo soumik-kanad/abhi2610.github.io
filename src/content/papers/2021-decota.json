@@ -1,0 +1,31 @@
+{
+  "id": "DeCoTa",
+  "title": "Deep Co-Training with Task Decomposition for Semi-Supervised Domain Adaptation",
+  "authors": [
+    "luyu-yang",
+    {
+      "name": "Yan Wang"
+    },
+    {
+      "name": "Mingfei Gao"
+    },
+    "abhinav-shrivastava",
+    {
+      "name": "Kilian Weinberger"
+    },
+    {
+      "name": "Wei-Lun Chao"
+    },
+    "ser-nam-lim"
+  ],
+  "venue": "ICCV",
+  "year": 2021,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/yang2020deep.txt",
+    "pdf": "https://openaccess.thecvf.com/content/ICCV2021/papers/Yang_Deep_Co-Training_With_Task_Decomposition_for_Semi-Supervised_Domain_Adaptation_ICCV_2021_paper.pdf",
+    "code": "https://github.com/LoyoYang/DeCoTa"
+  },
+  "thumbnail": "https://www.loyo.me/images/teaser_fig/DeCoTa.png",
+  "date": "2021-07"
+}

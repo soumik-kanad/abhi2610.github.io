@@ -1,0 +1,19 @@
+{
+  "id": "KnowledgeGraphs",
+  "title": "All About Knowledge Graphs for Actions",
+  "authors": [
+    "pallabi-ghosh",
+    "nirat-saini",
+    "larry-davis",
+    "abhinav-shrivastava"
+  ],
+  "venue": "arXiv",
+  "year": 2020,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/ghosh2020all.txt",
+    "pdf": "https://arxiv.org/abs/2008.12432"
+  },
+  "thumbnail": "images/kg2929.png",
+  "date": "2020-08"
+}

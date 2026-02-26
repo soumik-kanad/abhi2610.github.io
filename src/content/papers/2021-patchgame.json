@@ -1,0 +1,26 @@
+{
+  "id": "PatchGame",
+  "title": "PatchGame: Learning to Signal Mid-level Patches in Referential Games",
+  "authors": [
+    "kamal-gupta",
+    {
+      "name": "Gowthami Somepalli"
+    },
+    "anubhav",
+    "vinoj-jayasundara",
+    "matthias-zwicker",
+    "abhinav-shrivastava"
+  ],
+  "venue": "NeurIPS",
+  "year": 2021,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/gupta2021patchgame.txt",
+    "webpage": "https://kampta.github.io/patch-game/",
+    "pdf": "https://arxiv.org/abs/2111.01785",
+    "video": "https://slideslive.com/38968424/patchgame-learning-to-signal-midlevel-patches-in-referential-games?ref=speaker-50905",
+    "code": "https://github.com/kampta/PatchGame"
+  },
+  "thumbnail": "images/patchgame2.png",
+  "date": "2021-09"
+}

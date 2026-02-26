@@ -1,0 +1,29 @@
+{
+  "id": "imagine-verify-execute",
+  "title": "Imagine, Verify, Execute: Memory-guided Agentic Exploration with Vision-Language Models",
+  "authors": [
+    {
+      "name": "Seungjae Lee"
+    },
+    "daniel-ekpo",
+    {
+      "name": "Haowen Liu"
+    },
+    {
+      "name": "Furong Huang"
+    },
+    "abhinav-shrivastava",
+    {
+      "name": "Jia-Bin Huang"
+    }
+  ],
+  "venue": "CoRL",
+  "year": 2025,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2505.07815",
+    "webpage": "https://ive-robot.github.io/"
+  },
+  "thumbnail": "https://ive-robot.github.io/static/images/overview.png",
+  "date": "2025-08"
+}

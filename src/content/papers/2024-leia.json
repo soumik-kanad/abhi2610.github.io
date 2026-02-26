@@ -1,0 +1,21 @@
+{
+  "id": "leia",
+  "title": "LEIA: Latent View-invariant Embeddings for Implicit 3D Articulation",
+  "authors": [
+    "archana-swaminathan",
+    "anubhav",
+    "kamal-gupta",
+    "shishira-maiya",
+    "vatsal-agarwal",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ECCV",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2409.06703",
+    "webpage": "https://archana1998.github.io/leia/"
+  },
+  "thumbnail": "https://archana1998.github.io/images/leia_teaser.jpg",
+  "date": "2024-07"
+}

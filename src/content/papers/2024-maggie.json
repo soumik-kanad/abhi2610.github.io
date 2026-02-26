@@ -1,0 +1,24 @@
+{
+  "id": "maggie",
+  "title": "MaGGIe: Masked Guided Gradual Human Instance Matting",
+  "authors": [
+    "chuong-huynh",
+    {
+      "name": "Seoung Wug Oh"
+    },
+    "abhinav-shrivastava",
+    {
+      "name": "Joon-Young Lee"
+    }
+  ],
+  "venue": "CVPR",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2404.16035",
+    "webpage": "https://maggie-matt.github.io/",
+    "code": "https://github.com/hmchuong/MaGGIe"
+  },
+  "thumbnail": "https://hmchuong.github.io/images/thumb_cvpr24.jpg",
+  "date": "2024-02"
+}

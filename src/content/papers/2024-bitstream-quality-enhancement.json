@@ -1,0 +1,27 @@
+{
+  "id": "bitstream-quality-enhancement",
+  "title": "Leveraging Bitstream Metadata for Fast, Accurate, Generalized Compressed Video Quality Enhancement",
+  "authors": [
+    "max-ehrlich",
+    {
+      "name": "Jon Barker"
+    },
+    "namitha-padmanabhan",
+    "larry-davis",
+    {
+      "name": "Andrew Tao"
+    },
+    {
+      "name": "Bryan Catanzaro"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "WACV",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2202.00011"
+  },
+  "thumbnail": "https://namithap10.github.io/images/metabit_method.png",
+  "date": "2023-10"
+}

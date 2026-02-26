@@ -1,0 +1,31 @@
+{
+  "id": "BT2",
+  "title": "BT2: Backward-compatible Training with Basis Transformation",
+  "authors": [
+    {
+      "name": "Yifei Zhou"
+    },
+    {
+      "name": "Zilu Li"
+    },
+    "abhinav-shrivastava",
+    {
+      "name": "Hengshuang Zhao"
+    },
+    {
+      "name": "Antonio Torralba"
+    },
+    {
+      "name": "Taipeng Tian"
+    },
+    "ser-nam-lim"
+  ],
+  "venue": "ICCV",
+  "year": 2023,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2211.03989"
+  },
+  "thumbnail": "https://user-images.githubusercontent.com/83000332/200725681-2ecb9692-b9e1-4205-820e-a952d265bffd.png",
+  "date": "2023-07"
+}

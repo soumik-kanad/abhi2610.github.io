@@ -1,0 +1,21 @@
+{
+  "id": "SHACIRA",
+  "title": "SHACIRA: Scalable HAsh-grid Compression for Implicit Neural Representations",
+  "authors": [
+    "sharath-girish",
+    "abhinav-shrivastava",
+    "kamal-gupta"
+  ],
+  "venue": "ICCV",
+  "year": 2023,
+  "tags": [],
+  "links": {
+    "pdf": "http://arxiv.org/abs/2309.15848",
+    "webpage": "https://shacira.github.io/",
+    "poster": "https://www.dropbox.com/scl/fi/07zcx1abnpucjccsth1vy/Poster_Shacira_ICCV2023.pdf?rlkey=7iub05faiejz6ofhikrnochb3&dl=0",
+    "video": "https://www.youtube.com/watch?v=zRr9ZqlmSzY&ab_channel=SharathGirish",
+    "code": "https://github.com/Sharath-girish/Shacira"
+  },
+  "thumbnail": "https://sharath-girish.github.io/publication/shacira/featured_hu48bf3608fc5b661d42233fdf9e80a9fa_8123636_150x0_resize_lanczos_3.png",
+  "date": "2023-07"
+}

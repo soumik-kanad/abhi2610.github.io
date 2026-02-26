@@ -1,0 +1,19 @@
+{
+  "id": "grit",
+  "title": "GRIT: GAN Residuals for Paired Image-to-Image Translation",
+  "authors": [
+    "saksham-suri",
+    "moustafa-meshry",
+    "larry-davis",
+    "abhinav-shrivastava"
+  ],
+  "venue": "WACV",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://www.cs.umd.edu/~sakshams/grit/resources/GRIT_main_paper.pdf",
+    "webpage": "http://www.cs.umd.edu/~sakshams/grit/index.html"
+  },
+  "thumbnail": null,
+  "date": "2023-10"
+}

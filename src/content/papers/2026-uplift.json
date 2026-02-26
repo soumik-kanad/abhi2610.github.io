@@ -1,0 +1,23 @@
+{
+  "id": "UPLiFT",
+  "title": "UPLiFT: Efficient Pixel-Dense Feature Upsampling with Local Attenders",
+  "authors": [
+    "matthew-walmer",
+    "saksham-suri",
+    "anirud-aggarwal",
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2026,
+  "tags": [
+    "new"
+  ],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2601.17950",
+    "webpage": "https://www.cs.umd.edu/~mwalmer/uplift/",
+    "code": "https://github.com/mwalmer-umd/UPLiFT"
+  },
+  "thumbnail": null,
+  "date": "2026-02",
+  "sortOrder": 1
+}

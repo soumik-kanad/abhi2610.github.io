@@ -1,0 +1,23 @@
+{
+  "id": "trend",
+  "title": "TREND: Tri-teaching for Robust Preference-based Reinforcement Learning with Demonstrations",
+  "authors": [
+    "shuaiyi-huang",
+    "mara-levy",
+    "anubhav",
+    "daniel-ekpo",
+    {
+      "name": "Ruijie Zheng"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICRA",
+  "year": 2025,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2505.06079",
+    "webpage": "https://shuaiyihuang.github.io/publications/TREND/"
+  },
+  "thumbnail": "https://shuaiyihuang.github.io/images/projects/trend.png",
+  "date": "2025-01"
+}

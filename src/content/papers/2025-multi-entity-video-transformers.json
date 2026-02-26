@@ -1,0 +1,29 @@
+{
+  "id": "multi-entity-video-transformers",
+  "title": "Multi-entity Video Transformers for Fine-Grained Video Representation Learning",
+  "authors": [
+    "matthew-walmer",
+    {
+      "name": "Rose Kanjirathinkal"
+    },
+    {
+      "name": "Kai-Sheng Tai"
+    },
+    {
+      "name": "Keyur Muzumdar"
+    },
+    {
+      "name": "Taipeng Tian"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "FGVC Workshop, CVPR",
+  "year": 2025,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2311.10873",
+    "code": "https://github.com/facebookresearch/video_rep_learning"
+  },
+  "thumbnail": "http://www.cs.umd.edu/~mwalmer/images/mvformer.png",
+  "date": "2025-03"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "queen",
+  "title": "QUEEN: QUantized Efficient ENcoding of Dynamic Gaussians for Streaming Free-viewpoint Videos",
+  "authors": [
+    "sharath-girish",
+    {
+      "name": "Tianye Li"
+    },
+    {
+      "name": "Amrita Mazumdar"
+    },
+    "abhinav-shrivastava",
+    {
+      "name": "David Luebke"
+    },
+    {
+      "name": "Shalini De Mello"
+    }
+  ],
+  "venue": "NeurIPS",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2412.04469",
+    "webpage": "https://research.nvidia.com/labs/amri/projects/queen/",
+    "code": "https://github.com/NVlabs/queen",
+    "video": "https://research.nvidia.com/labs/amri/projects/queen/media/videos/neurips_2024_queen_supp_video.mp4"
+  },
+  "thumbnail": "images/thumbnails/queen.gif",
+  "date": "2024-09"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "multiscale",
+  "title": "Measuring and Increasing the capacity of Natural HOG Statistics",
+  "authors": [
+    {
+      "name": "Tinghui Zhou",
+      "url": "https://people.eecs.berkeley.edu/~tinghuiz/"
+    },
+    "abhinav-shrivastava",
+    {
+      "name": "Guillaume Obozinski",
+      "url": "http://imagine.enpc.fr/~obozinsg/"
+    },
+    "abhinav-gupta",
+    "alexei-a-efros"
+  ],
+  "venue": "CMU Technical Report",
+  "year": 2013,
+  "tags": [],
+  "links": {
+    "pdf": "https://www.cs.umd.edu/~abhinav/papers/pdfs/multiscale_tinghui_tr.pdf",
+    "supplement": "https://www.cs.umd.edu/~abhinav/papers/pdfs/multiscale_tinghui_tr_supplement.pdf"
+  },
+  "thumbnail": "images/multiscale_tinghui.png",
+  "date": "2013-06"
+}

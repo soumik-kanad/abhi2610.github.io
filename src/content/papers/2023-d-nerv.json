@@ -1,0 +1,25 @@
+{
+  "id": "D-NeRV",
+  "title": "Towards Scalable Neural Representation for Diverse Videos",
+  "authors": [
+    "bo-he",
+    "xitong-yang",
+    "hanyu-wang",
+    "zuxuan-wu",
+    "hao-chen",
+    "shuaiyi-huang",
+    "yixuan-ren",
+    "ser-nam-lim",
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2023,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2303.14124",
+    "webpage": "https://boheumd.github.io/D-NeRV/",
+    "code": "https://github.com/boheumd/D-NeRV"
+  },
+  "thumbnail": "images/D-NeRV.png",
+  "date": "2023-02"
+}

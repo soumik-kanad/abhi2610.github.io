@@ -1,0 +1,39 @@
+{
+  "id": "ASIC",
+  "title": "ASIC: Aligning Sparse in-the-wild Image Collections",
+  "authors": [
+    "kamal-gupta",
+    {
+      "name": "Varun Jampani"
+    },
+    {
+      "name": "Carlos Esteves",
+      "url": "https://machc.github.io/"
+    },
+    "abhinav-shrivastava",
+    {
+      "name": "Ameesh Makadia",
+      "url": "https://www.ameeshmakadia.com/"
+    },
+    {
+      "name": "Noah Snavely",
+      "url": "https://www.cs.cornell.edu/~snavely/"
+    },
+    {
+      "name": "Abhishek Kar",
+      "url": "https://abhishekkar.info/"
+    }
+  ],
+  "venue": "ICCV",
+  "year": 2023,
+  "tags": [
+    "oral"
+  ],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2303.16201",
+    "webpage": "https://kampta.github.io/asic/",
+    "video": "https://www.youtube.com/watch?v=fLjkkMriuoY"
+  },
+  "thumbnail": "https://abhishekkar.info/asic/asic.gif",
+  "date": "2023-07"
+}

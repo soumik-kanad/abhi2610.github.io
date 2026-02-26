@@ -1,0 +1,36 @@
+{
+  "id": "collm",
+  "title": "CoLLM: A Large Language Model for Composed Image Retrieval",
+  "authors": [
+    "chuong-huynh",
+    {
+      "name": "Jinyu Yang"
+    },
+    {
+      "name": "Ashish Tawari"
+    },
+    {
+      "name": "Mubarak Shah"
+    },
+    {
+      "name": "Son Tran"
+    },
+    {
+      "name": "Raffay Hamid"
+    },
+    {
+      "name": "Trishul Chilimbi"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2025,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2503.19910",
+    "webpage": "https://collm-cvpr25.github.io/",
+    "code": "https://github.com/hmchuong/CoLLM"
+  },
+  "thumbnail": "https://hmchuong.github.io/images/thumb_collm.png",
+  "date": "2025-02"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "fast-encoding-decoding-inr",
+  "title": "Fast Encoding and Decoding for Implicit Video Representation",
+  "authors": [
+    "hao-chen",
+    {
+      "name": "Saining Xie"
+    },
+    "ser-nam-lim",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ECCV",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2409.19429",
+    "webpage": "https://haochen-rye.github.io/FastNeRV/",
+    "code": "https://github.com/haochen-rye/FastNeRV"
+  },
+  "thumbnail": "https://haochen-rye.github.io/images/fastnerv.jpg",
+  "date": "2024-07"
+}

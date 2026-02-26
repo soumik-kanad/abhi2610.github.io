@@ -1,0 +1,34 @@
+{
+  "id": "style-similarity-diffusion",
+  "title": "Investigating Style Similarity in Diffusion Models",
+  "authors": [
+    {
+      "name": "Gowthami Somepalli"
+    },
+    "anubhav",
+    "kamal-gupta",
+    {
+      "name": "Shramay Palta"
+    },
+    {
+      "name": "Micah Goldblum"
+    },
+    {
+      "name": "Jonas Geiping"
+    },
+    "abhinav-shrivastava",
+    {
+      "name": "Tom Goldstein"
+    }
+  ],
+  "venue": "ECCV",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2404.01292",
+    "webpage": "https://somepago.github.io/csd.html",
+    "code": "https://github.com/learn2phoenix/CSD"
+  },
+  "thumbnail": "https://somepago.github.io/static/projects/csd/csd_teaser.png",
+  "date": "2024-07"
+}

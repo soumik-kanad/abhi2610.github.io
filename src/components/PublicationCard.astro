@@ -1,0 +1,119 @@
+---
+import { resolveAuthor } from '@utils/authors';
+import { resolveThumbnailSrc } from '@utils/thumbnails';
+
+import type { AuthorRef } from '@utils/authors';
+
+interface Props {
+  paper: {
+    id: string;
+    title: string;
+    authors: AuthorRef[];
+    venue: string;
+    year: number;
+    tags?: string[];
+    links?: Record<string, string>;
+    thumbnail?: string | null;
+  };
+}
+
+const { paper } = Astro.props;
+const thumbSrc = resolveThumbnailSrc(paper.thumbnail);
+const authors = paper.authors.map(ref => resolveAuthor(ref));
+
+// Order links: pdf first, bibtex excluded (auto-generated below)
+const linkOrder = ['pdf', 'webpage', 'code', 'video', 'poster', 'dataset', 'slides', 'data'];
+const rawLinks = Object.entries(paper.links || {}).filter(([k]) => k !== 'bibtex');
+const sortedLinks = rawLinks.sort((a, b) => {
+  const ai = linkOrder.indexOf(a[0]);
+  const bi = linkOrder.indexOf(b[0]);
+  return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+});
+
+// Auto-generate bibtex
+const journalVenues = new Set(['TPAMI', 'IJCV', 'TIP', 'Nature Machine Intelligence', 'Frontiers in Computational Neuroscience', 'arXiv', 'Springer Book Chapter']);
+const isJournal = journalVenues.has(paper.venue) || paper.venue.startsWith('CMU');
+const entryType = isJournal ? 'article' : 'inproceedings';
+
+// Citation key: first author last name + year + first title word
+const firstAuthor = authors[0]?.name || 'unknown';
+const lastName = firstAuthor.split(' ').pop()?.toLowerCase() || 'unknown';
+const firstWord = paper.title.split(/[\s:]+/)[0].toLowerCase().replace(/[^a-z]/g, '');
+const citeKey = `${lastName}${paper.year}${firstWord}`;
+
+// Author string: "Last, First and Last, First"
+const bibtexAuthors = authors.map(a => {
+  const parts = a.name.split(' ');
+  if (parts.length === 1) return parts[0];
+  const last = parts.pop();
+  return `${last}, ${parts.join(' ')}`;
+}).join(' and ');
+
+const venueField = isJournal
+  ? `  journal={${paper.venue}},`
+  : `  booktitle={${paper.venue}},`;
+
+// Find pdf URL for url field
+const pdfUrl = paper.links?.pdf || paper.links?.webpage || '';
+const urlField = pdfUrl ? `\n  url={${pdfUrl}}` : '';
+
+const bibtex = `@${entryType}{${citeKey},
+  title={{${paper.title}}},
+  author={${bibtexAuthors}},
+${venueField}
+  year={${paper.year}}${urlField}
+}`;
+---
+
+<div class="pub-card" id={paper.id}>
+  <div class="pub-thumb">
+    {thumbSrc ? (
+      <img src={thumbSrc} alt={paper.title} loading="lazy" />
+    ) : (
+      <span class="pub-thumb-placeholder">{paper.venue}<br />{paper.year}</span>
+    )}
+  </div>
+  <div class="pub-info">
+    <div class="pub-title">{paper.title}</div>
+    <div class="pub-authors">
+      {authors.map((a, i) => (
+        <>
+          {a.isSelf ? (
+            <strong>{a.name}</strong>
+          ) : a.url ? (
+            <a href={a.url} target="_blank" rel="noopener">{a.name}</a>
+          ) : (
+            <span>{a.name}</span>
+          )}
+          {i < authors.length - 1 && ', '}
+        </>
+      ))}
+    </div>
+    <div class="pub-venue-row">
+      <span class="pub-venue">{paper.venue} {paper.year}</span>
+      {paper.tags && paper.tags.length > 0 && (
+        <span class="pub-tags">
+          {paper.tags.map(tag => (
+            <span class={`pub-tag ${tag.replace(/\s+/g, '-')}`}>{tag}</span>
+          ))}
+        </span>
+      )}
+    </div>
+    <div class="pub-links">
+      {sortedLinks.map(([label, url], i) => (
+        <>
+          <a href={url} class="pub-link" target="_blank" rel="noopener">{label}</a>
+          <span class="pub-sep">/</span>
+        </>
+      ))}
+      <button class="pub-link pub-bibtex-btn" data-bibtex={bibtex} type="button">bibtex</button>
+    </div>
+    <div class="pub-bibtex-popover" style="display:none;">
+      <div class="pub-bibtex-header">
+        <span>BibTeX</span>
+        <button class="pub-bibtex-copy" type="button">Copy</button>
+      </div>
+      <pre class="pub-bibtex-code">{bibtex}</pre>
+    </div>
+  </div>
+</div>

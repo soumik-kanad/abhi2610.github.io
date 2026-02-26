@@ -1,0 +1,140 @@
+---
+import Layout from '@layouts/Layout.astro';
+---
+
+<Layout title="Bio — Abhinav Shrivastava" description="Short and long biography for Abhinav Shrivastava. Copy-paste ready for conference programs and talk introductions.">
+  <h1>Bio</h1>
+  <p class="bio-note">Plain text for copy-paste. Click to copy either version.</p>
+
+  <div class="bio-header">
+    <h2 class="section-anchor" id="bio-short">Short</h2>
+    <button class="copy-btn" data-target="bioShort">copy</button>
+  </div>
+  <div class="bio-text" id="bioShort">
+    <p>
+      Abhinav Shrivastava is an Associate Professor of Computer Science at the University of Maryland, College Park, with a joint
+      appointment in UMIACS.
+      He leads the Perception and Intelligence (PI) Lab, working on computer vision, machine learning, and robotics.
+      His research is supported by NSF, DARPA, IARPA, NGA, Apple, Amazon, Google, Adobe, Meta, and others.
+      He is lead PI for IARPA VideoLINCS and DARPA SAIL-ON, and co-PI for IARPA SMART, DARPA MediFor, SemaFor, and GARD.
+      He has received the NSF CAREER Award, Amazon Research Awards (2021, 2024), Google Faculty Research Gift (2024),
+      and Apple Research Award (2025).
+      His work has received best paper awards at WACV (2014, 2020) and a best paper finalist at CVPR (2019).
+      He has been invited to present at the White House and the NAE/JHU Forum on Engineered AI Systems.
+      His work has been featured in Forbes, BBC, AP, CNN, Wired, Newsweek, and Popular Science.
+      Before Maryland, he was a visiting research scientist at Google Research.
+      He completed his PhD in Robotics from Carnegie Mellon University in 2017, where he was a Microsoft Research Fellow.
+    </p>
+  </div>
+
+  <div class="bio-header">
+    <h2 class="section-anchor" id="bio-long">Long</h2>
+    <button class="copy-btn" data-target="bioLong">copy</button>
+  </div>
+  <div class="bio-text" id="bioLong">
+    <p>
+      Abhinav Shrivastava is an Associate Professor of Computer Science at the University of Maryland, College Park, 
+      with a joint appointment in UMIACS.
+      He leads the Perception and Intelligence (PI) Lab and is a member of the
+      Center for Automation Research (CfAR), Computer Vision Lab (CVL),
+      Maryland Robotics Center (MRC), and Center for Machine Learning (CML).
+      His research focuses on computer vision, machine learning, and robotics.
+    </p>
+    <p>
+      His research is supported by NSF, DARPA, IARPA, NGA, Air Force, Apple, Amazon, Google, Adobe, Meta, Honda, and Dolby.
+      He is lead PI for IARPA VideoLINCS and DARPA SAIL-ON,
+      and co-investigator for IARPA SMART and WRIVA, DARPA MediFor, SemaFor, and GARD, and NSF EFRI.
+    </p>
+    <p>
+      He has received the NSF CAREER Award (2023), Amazon Research Awards (2021, 2024),
+      Google Faculty Research Award (2024), Apple Research Award (2025),
+      and the Microsoft Research PhD Fellowship (2014–16).
+      His work has received best paper awards at WACV 2014 (Student) and WACV 2020 (Applications),
+      a best paper finalist at CVPR 2019,
+      and was named CNN's Top-10 Ideas in 2013.
+      He received the Distinguished Alumni Award for Academic Excellence from JIIT in 2025.
+    </p>
+    <p>
+      He was invited to present at the White House on AI research
+      and at the NAE/JHU Forum on Engineered AI Systems.
+      His work has been featured in Forbes, BBC, AP, CNN, Wired, Newsweek, TechCrunch, and Popular Science.
+    </p>
+    <p>
+      Before Maryland, he was a visiting research scientist at Google AI.
+      He received his PhD in Robotics from Carnegie Mellon University in 2017, advised by Abhinav Gupta.
+      He also holds an MS from CMU's Robotics Institute (with Alexei Efros and Martial Hebert)
+      and a B.Tech. from JIIT, where he graduated with the Vice Chancellor Gold Medal.
+    </p>
+  </div>
+</Layout>
+
+<script>
+  function initCopyBtns() {
+    document.querySelectorAll<HTMLButtonElement>('.copy-btn').forEach(btn => {
+      if (btn.dataset.bound) return;
+      btn.dataset.bound = '1';
+      btn.addEventListener('click', () => {
+        const target = document.getElementById(btn.dataset.target || '');
+        if (!target) return;
+        const text = target.innerText.replace(/\n\n+/g, '\n\n').trim();
+        navigator.clipboard.writeText(text).then(() => {
+          btn.textContent = 'copied!';
+          setTimeout(() => { btn.textContent = 'copy'; }, 2000);
+        });
+      });
+    });
+  }
+  initCopyBtns();
+  document.addEventListener('astro:after-swap', initCopyBtns);
+</script>
+
+<style>
+  .bio-note {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--text-tertiary);
+    margin-bottom: 8px;
+  }
+
+  .bio-text {
+    max-width: none;
+  }
+
+  .bio-text p {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--text-secondary);
+    line-height: 1.85;
+    margin-bottom: 16px;
+  }
+
+  .bio-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    max-width: none;
+  }
+
+  .bio-header h2 {
+    margin-bottom: 20px;
+  }
+
+  .copy-btn {
+    display: inline-block;
+    padding: 4px 14px;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 400;
+    color: var(--text-tertiary);
+    background: transparent;
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .copy-btn:hover {
+    color: var(--accent-blue);
+    border-color: var(--accent-blue-subtle);
+  }
+</style>

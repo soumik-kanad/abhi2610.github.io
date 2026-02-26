@@ -1,0 +1,32 @@
+{
+  "id": "ardup",
+  "title": "ARDuP: Active Region Video Diffusion for Universal Policies",
+  "authors": [
+    "shuaiyi-huang",
+    "mara-levy",
+    {
+      "name": "Zhenyu Jiang"
+    },
+    {
+      "name": "Anima Anandkumar"
+    },
+    {
+      "name": "Yuke Zhu"
+    },
+    {
+      "name": "Linxi Fan"
+    },
+    {
+      "name": "De-An Huang"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "IROS",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2406.13301"
+  },
+  "thumbnail": "https://shuaiyihuang.github.io/images/projects/ardup.png",
+  "date": "2024-06"
+}

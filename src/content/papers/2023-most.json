@@ -1,0 +1,23 @@
+{
+  "id": "MOST",
+  "title": "MOST: Multiple Object Localization with Self-Supervised Transformers for Object Discovery",
+  "authors": [
+    "saketh-rambhatla",
+    "ishan-misra",
+    "rama-chellappa",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICCV",
+  "year": 2023,
+  "tags": [
+    "oral"
+  ],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2304.05387",
+    "webpage": "https://rssaketh.github.io/most.html",
+    "poster": "https://rssaketh.github.io/data/most_poster.pdf",
+    "code": "https://github.com/rssaketh/MOST"
+  },
+  "thumbnail": "https://rssaketh.github.io/images/most/most_pipeline.png",
+  "date": "2023-07"
+}

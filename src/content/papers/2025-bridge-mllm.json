@@ -1,0 +1,24 @@
+{
+  "id": "bridge-mllm",
+  "title": "Growing Visual Generative Capacity for Pre-Trained MLLMs",
+  "authors": [
+    "hanyu-wang",
+    {
+      "name": "Jiaming Han"
+    },
+    {
+      "name": "Ziyan Yang"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "arXiv",
+  "year": 2025,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2510.01546",
+    "webpage": "https://hywang66.github.io/bridge/",
+    "code": "https://github.com/hywang66/Bridge"
+  },
+  "thumbnail": "https://hywang66.github.io/bridge/static/images/bridge_method.jpg",
+  "date": "2025-10"
+}

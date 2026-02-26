@@ -1,0 +1,23 @@
+{
+  "id": "nerv",
+  "title": "NeRV: Neural Representations for Videos",
+  "authors": [
+    "hao-chen",
+    "bo-he",
+    "hanyu-wang",
+    "yixuan-ren",
+    "ser-nam-lim",
+    "abhinav-shrivastava"
+  ],
+  "venue": "NeurIPS",
+  "year": 2021,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/chen2021nerv.txt",
+    "webpage": "https://haochen-rye.github.io/NeRV/",
+    "pdf": "https://arxiv.org/abs/2110.13903",
+    "code": "https://github.com/haochen-rye/NeRV"
+  },
+  "thumbnail": "https://haochen-rye.github.io/NeRV/img/nerv_bunny.gif",
+  "date": "2021-09"
+}

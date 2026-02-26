@@ -1,0 +1,22 @@
+{
+  "id": "nerv-diffusion",
+  "title": "NeRV-Diffusion: Diffuse Implicit Neural Representation for Video Synthesis",
+  "authors": [
+    "yixuan-ren",
+    "hanyu-wang",
+    "hao-chen",
+    "bo-he",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICLR",
+  "year": 2026,
+  "tags": [
+    "new"
+  ],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2509.24353",
+    "webpage": "https://nerv-diffusion.github.io/"
+  },
+  "thumbnail": "https://boheumd.github.io/images/nerv_diffusion.png",
+  "date": "2026-01"
+}

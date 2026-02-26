@@ -1,0 +1,282 @@
+/* ============================================
+   GROUP PAGE
+   ============================================ */
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 32px;
+  margin-top: 8px;
+  align-items: start;
+}
+
+.person {
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.person:hover {
+  transform: translateY(-4px);
+}
+
+.person-photo {
+  width: 108px;
+  height: 108px;
+  border-radius: 12px;
+  background: var(--accent-blue-light);
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: var(--accent-blue);
+  font-weight: 400;
+  font-family: 'Cormorant Garamond', serif;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.person:hover .person-photo {
+  box-shadow: 0 4px 16px rgba(58, 107, 229, 0.2);
+}
+
+a.person-photo {
+  cursor: pointer;
+}
+
+.person-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.person-name {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.person-name a {
+  color: var(--text-primary);
+}
+
+.person-name a:hover {
+  color: var(--accent-blue);
+}
+
+.person-tag {
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: var(--text-tertiary);
+  margin-top: 2px;
+}
+
+.person-coadvisor {
+  font-size: 0.6rem;
+  font-weight: 300;
+  color: var(--text-tertiary);
+  margin-top: 1px;
+}
+
+.person-coadvisor a {
+  color: var(--text-tertiary);
+}
+
+.person-coadvisor a:hover {
+  color: var(--accent-blue);
+}
+
+.person-tagline {
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: var(--text-tertiary);
+  margin-top: 3px;
+  line-height: 1.4;
+}
+
+/* Alumni list — enhanced Option A */
+.alumni-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.alumni-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.alumni-row:hover {
+  padding-left: 8px;
+}
+
+.alumni-left {
+  min-width: 0;
+}
+
+.alumni-name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--accent-blue);
+  margin-bottom: 3px;
+}
+
+.alumni-name a {
+  color: var(--accent-blue);
+  transition: color 0.2s ease;
+}
+
+.alumni-name a:hover {
+  color: var(--accent-gold);
+}
+
+.alumni-thesis {
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: var(--text-tertiary);
+  line-height: 1.5;
+}
+
+/* Compact lists for MS, undergrad, high school */
+.compact-list {
+  line-height: 2.2;
+}
+
+.compact-item {
+  display: inline-flex;
+  align-items: baseline;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--text-secondary);
+}
+
+.compact-item a {
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+.compact-item a:hover {
+  color: var(--accent-blue);
+}
+
+.compact-award {
+  color: var(--accent-gold);
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-left: 2px;
+}
+
+.compact-note {
+  color: var(--text-tertiary);
+  font-size: 0.78rem;
+  margin-left: 4px;
+}
+
+.compact-item::after {
+  content: '·';
+  color: var(--text-tertiary);
+  opacity: 0.4;
+  margin: 0 8px;
+}
+
+.compact-item:last-child::after {
+  content: '';
+}
+
+/* Memorial tooltip */
+.memorial-note {
+  position: absolute;
+  left: 0;
+  top: calc(100% - 8px);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+.compact-item:has(.memorial-note) {
+  position: relative;
+}
+
+.compact-item:has(.memorial-note):hover .memorial-note {
+  opacity: 0.7;
+}
+
+.alumni-coadvisor {
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--text-tertiary);
+  margin-top: 2px;
+}
+
+.alumni-coadvisor a {
+  color: var(--text-tertiary);
+  font-weight: 400;
+}
+
+.alumni-coadvisor a:hover {
+  color: var(--accent-blue);
+}
+
+.alumni-awards {
+  margin-top: 4px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.alumni-award {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: var(--accent-gold);
+  background: var(--accent-gold-light);
+  padding: 2px 7px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.alumni-right {
+  text-align: right;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 4px;
+  gap: 2px;
+}
+
+.alumni-placement {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--text-tertiary);
+}
+
+.alumni-placement .year {
+  opacity: 0.7;
+}
+
+.alumni-placement .arrow {
+  color: var(--border-hover);
+  margin: 0 4px;
+}
+
+.alumni-placement .company {
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.alumni-placement .current-company {
+  font-weight: 400;
+  color: var(--text-secondary);
+}

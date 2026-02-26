@@ -1,0 +1,20 @@
+{
+  "id": "GANWild",
+  "title": "Towards Discovery and Attribution of Open-world GAN Generated Images",
+  "authors": [
+    "sharath-girish",
+    "saksham-suri",
+    "saketh-rambhatla",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICCV",
+  "year": 2021,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/girish2021towards.txt",
+    "pdf": "http://www.cs.umd.edu/~sakshams/project_page/resources/full_paper.pdf",
+    "webpage": "http://www.cs.umd.edu/~sakshams/project_page/gan_wild.html"
+  },
+  "thumbnail": "http://www.cs.umd.edu/~sakshams/images/gan.jpg",
+  "date": "2021-07"
+}

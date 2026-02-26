@@ -1,0 +1,22 @@
+{
+  "id": "xinc",
+  "title": "Explaining the Implicit Neural Canvas (XINC): Connecting Pixels to Neurons by Tracing their Contributions",
+  "authors": [
+    "namitha-padmanabhan",
+    "matt-gwilliam",
+    "pulkit-kumar",
+    "shishira-maiya",
+    "max-ehrlich",
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2401.10217",
+    "webpage": "https://namithap10.github.io/xinc/",
+    "code": "https://github.com/namithap10/xinc"
+  },
+  "thumbnail": "https://namithap10.github.io/images/xinc_teaser.png",
+  "date": "2024-02"
+}

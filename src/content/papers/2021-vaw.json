@@ -1,0 +1,33 @@
+{
+  "id": "VAW",
+  "title": "Learning to Predict Visual Attributes in the Wild",
+  "authors": [
+    "khoi-pham",
+    {
+      "name": "Kushal Kafle"
+    },
+    "zhe-lin",
+    {
+      "name": "Zhihong Ding"
+    },
+    {
+      "name": "Scott Cohen"
+    },
+    {
+      "name": "Quan Hung Tran"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2021,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/pham2021learning.txt",
+    "pdf": "http://arxiv.org/abs/2106.09707",
+    "webpage": "https://vawdataset.com/",
+    "code": "https://github.com/adobe-research/vaw_dataset",
+    "demo": "https://vawdataset.com/demo"
+  },
+  "thumbnail": "https://vawdataset.com/static/vaw_hero.png",
+  "date": "2021-02"
+}

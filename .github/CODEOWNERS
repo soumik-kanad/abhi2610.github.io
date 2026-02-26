@@ -1,0 +1,8 @@
+# Students can only add/modify paper files and thumbnails
+# All other changes require Abhinav's review
+
+* @abhinavs95
+
+# Students can submit papers and thumbnails via PR
+src/content/papers/ @abhinavs95
+public/images/thumbnails/ @abhinavs95

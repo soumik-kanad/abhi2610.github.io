@@ -1,0 +1,23 @@
+{
+  "id": "selection",
+  "title": "Data-driven Exemplar Model Selection",
+  "authors": [
+    "ishan-misra",
+    "abhinav-shrivastava",
+    "martial-hebert"
+  ],
+  "venue": "WACV",
+  "year": 2014,
+  "tags": [
+    "oral",
+    "best student paper award"
+  ],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/selection_wacv14.txt",
+    "pdf": "http://www.cs.cmu.edu/~imisra/projects/budgetedDet/selection-wacv-2014.pdf",
+    "webpage": "http://www.cs.cmu.edu/~imisra/projects/budgetedDet/budgetedDet.html",
+    "slides": "https://www.dropbox.com/s/l1mtfbhjpnn46zv/data-driven-selection-wacv-2014.pptx?dl=0"
+  },
+  "thumbnail": "images/wacv3.png",
+  "date": "2013-10"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "multimodality-style-transfer",
+  "title": "Multimodality-guided Image Style Transfer using Cross-modal GAN Inversion",
+  "authors": [
+    "hanyu-wang",
+    {
+      "name": "Pengxiang Wu"
+    },
+    {
+      "name": "Kevin Dela Rosa"
+    },
+    {
+      "name": "Chen Wang"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "WACV",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2312.01671",
+    "webpage": "https://hywang66.github.io/mmist/",
+    "code": "https://github.com/hywang66/mmist"
+  },
+  "thumbnail": "https://hywang66.github.io/mmist/static/images/teaser.jpg",
+  "date": "2023-10"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "SimpSON",
+  "title": "SimpSON: Simplifying Photo Cleanup With Single-Click Distracting Object Segmentation Network",
+  "authors": [
+    "chuong-huynh",
+    {
+      "name": "Yuqian Zhou"
+    },
+    "zhe-lin",
+    {
+      "name": "Connelly Barnes"
+    },
+    {
+      "name": "Eli Shechtman"
+    },
+    {
+      "name": "Sohrab Amirghodsi"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2023,
+  "tags": [],
+  "links": {
+    "pdf": "https://openaccess.thecvf.com/content/CVPR2023/html/Huynh_SimpSON_Simplifying_Photo_Cleanup_With_Single-Click_Distracting_Object_Segmentation_Network_CVPR_2023_paper.html",
+    "webpage": "https://simpson-cvpr23.github.io/",
+    "code": "https://github.com/hmchuong/SimpSONt",
+    "video": "https://youtu.be/m4eIkwJUDfo",
+    "poster": "https://hmchuong.github.io/pdf/cvpr23_poster_simpson.pdf"
+  },
+  "thumbnail": "images/simpson.jpg",
+  "date": "2023-02"
+}

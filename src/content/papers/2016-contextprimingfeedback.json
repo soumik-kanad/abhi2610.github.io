@@ -1,0 +1,18 @@
+{
+  "id": "contextPrimingFeedback",
+  "title": "Contextual Priming and Feedback for Faster R-CNN",
+  "authors": [
+    "abhinav-shrivastava",
+    "abhinav-gupta"
+  ],
+  "venue": "ECCV",
+  "year": 2016,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/primingfeedback_eccv16.txt",
+    "pdf": "https://www.cs.umd.edu/~abhinav/papers/pdfs/context_priming_feedback.pdf",
+    "poster": "https://www.cs.umd.edu/~abhinav/papers/posters/context_priming_feedback.pdf"
+  },
+  "thumbnail": "images/primingfeedback3_compressed.png",
+  "date": "2016-07"
+}

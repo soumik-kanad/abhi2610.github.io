@@ -1,0 +1,19 @@
+{
+  "id": "motion-encoding-diffusion",
+  "title": "Characterizing Motion Encoding in Video Diffusion Timesteps",
+  "authors": [
+    {
+      "name": "Vatsal Baherwani"
+    },
+    "yixuan-ren",
+    "abhinav-shrivastava"
+  ],
+  "venue": "arXiv",
+  "year": 2025,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2512.22175"
+  },
+  "thumbnail": "https://ryx19th.github.io/images/timesteps.png",
+  "date": "2025-12"
+}

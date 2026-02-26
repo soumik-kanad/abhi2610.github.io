@@ -1,0 +1,23 @@
+{
+  "id": "handpriming",
+  "title": "Leveraging Hand-Object Interactions in Assistive Egocentric Vision",
+  "authors": [
+    {
+      "name": "Kyungjun Lee",
+      "url": "https://www.cs.umd.edu/~kjlee/"
+    },
+    "abhinav-shrivastava",
+    {
+      "name": "Hernisa Kacorri"
+    }
+  ],
+  "venue": "TPAMI",
+  "year": 2021,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/lee2021leveraging.txt",
+    "pdf": "https://ieeexplore.ieee.org/document/9591443"
+  },
+  "thumbnail": "images/handpriming.png",
+  "date": "2021-06"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "Colorization",
+  "title": "Tracking Emerges by Colorizing Videos",
+  "authors": [
+    "carl-vondrick",
+    "abhinav-shrivastava",
+    {
+      "name": "Alireza Fathi",
+      "url": "http://ai.stanford.edu/~alireza/"
+    },
+    {
+      "name": "Sergio Guadarrama",
+      "url": "https://ai.google/research/people/105009"
+    },
+    "kevin-murphy"
+  ],
+  "venue": "ECCV",
+  "year": 2018,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/unsuptrack_eccv18.txt",
+    "pdf": "https://arxiv.org/pdf/1806.09594.pdf"
+  },
+  "thumbnail": "images/unsuptrack001_compress.gif",
+  "date": "2018-07"
+}

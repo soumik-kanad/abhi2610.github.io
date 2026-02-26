@@ -1,0 +1,21 @@
+{
+  "id": "patchvae",
+  "title": "PatchVAE: Learning Local Latent Codes for Recognition",
+  "authors": [
+    "kamal-gupta",
+    "saurabh-singh",
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2020,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/gupta2020patchvae.txt",
+    "pdf": "https://arxiv.org/abs/2004.03623",
+    "code": "https://github.com/kampta/PatchVAE",
+    "webpage": "https://kampta.github.io/patch-vae/",
+    "video": "https://www.youtube.com/watch?v=nshuuEzc3kc"
+  },
+  "thumbnail": "images/patchvae.png",
+  "date": "2020-02"
+}

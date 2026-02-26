@@ -1,0 +1,20 @@
+{
+  "id": "TeachingMatters",
+  "title": "Teaching Matters: Investigating the Role of Supervision in Vision Transformers",
+  "authors": [
+    "matthew-walmer",
+    "saksham-suri",
+    "kamal-gupta",
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2023,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2212.03862",
+    "webpage": "http://www.cs.umd.edu/~sakshams/vit_analysis/",
+    "code": "https://github.com/mwalmer-umd/vit_analysis"
+  },
+  "thumbnail": "http://www.cs.umd.edu/~sakshams/vit_analysis/resources/diagonal.gif",
+  "date": "2023-02"
+}

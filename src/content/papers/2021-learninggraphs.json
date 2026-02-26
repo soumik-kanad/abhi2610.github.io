@@ -1,0 +1,22 @@
+{
+  "id": "LearningGraphs",
+  "title": "Learning Graphs for Knowledge Transfer with Limited Labels",
+  "authors": [
+    "pallabi-ghosh",
+    "nirat-saini",
+    "larry-davis",
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2021,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/ghosh2021learning.txt",
+    "pdf": "https://openaccess.thecvf.com/content/CVPR2021/papers/Ghosh_Learning_Graphs_for_Knowledge_Transfer_With_Limited_Labels_CVPR_2021_paper.pdf",
+    "webpage": "https://pallabig.github.io/LearningGraphsForGCN/",
+    "video": "https://pallabig.github.io/LearningGraphsForGCN/5566_presentation_video.mp4",
+    "code": "https://github.com/pallabig/LearningGraphsForGCN.code"
+  },
+  "thumbnail": "https://pallabig.github.io/LearningGraphsForGCN/cvpr_learning_graphs_for_GCN/CVPR_21_gif.gif",
+  "date": "2021-02"
+}

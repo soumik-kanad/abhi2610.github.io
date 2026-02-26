@@ -1,0 +1,21 @@
+{
+  "id": "trokens",
+  "title": "Trokens: Semantic-Aware Relational Trajectory Tokens for Few-Shot Action Recognition",
+  "authors": [
+    "pulkit-kumar",
+    "shuaiyi-huang",
+    "matthew-walmer",
+    "saketh-rambhatla",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICCV",
+  "year": 2025,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2508.03695",
+    "webpage": "https://trokens-iccv25.github.io/",
+    "code": "https://github.com/pulkitkumar95/trokens"
+  },
+  "thumbnail": "http://www.cs.umd.edu/~mwalmer/images/trokens.png",
+  "date": "2025-07"
+}

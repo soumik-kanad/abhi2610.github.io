@@ -1,0 +1,21 @@
+{
+  "id": "open-world-czsl",
+  "title": "Unified Framework for Open-World Compositional Zero-shot Learning",
+  "authors": [
+    {
+      "name": "Hirunima Jayasekara"
+    },
+    "khoi-pham",
+    "nirat-saini",
+    "abhinav-shrivastava"
+  ],
+  "venue": "WACV",
+  "year": 2025,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2412.04083",
+    "code": "https://github.com/hirunima/OWCZSL"
+  },
+  "thumbnail": null,
+  "date": "2024-10"
+}

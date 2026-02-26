@@ -1,0 +1,17 @@
+{
+  "id": "egocentric",
+  "title": "Real-time Household Object Detection from First-person's view using Exemplar-SVMs",
+  "authors": [
+    "abhinav-shrivastava",
+    "abhinav-gupta",
+    "alexei-a-efros"
+  ],
+  "venue": "Ego-Vision Workshop, CVPR",
+  "year": 2012,
+  "tags": [],
+  "links": {
+    "webpage": "https://www.cs.umd.edu/~abhinav/backup/googleAI/"
+  },
+  "thumbnail": "images/fpv.png",
+  "date": "2012-03"
+}

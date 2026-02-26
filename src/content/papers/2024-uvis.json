@@ -1,0 +1,20 @@
+{
+  "id": "uvis",
+  "title": "UVIS: Unsupervised Video Instance Segmentation",
+  "authors": [
+    "shuaiyi-huang",
+    "saksham-suri",
+    "kamal-gupta",
+    "saketh-rambhatla",
+    "ser-nam-lim",
+    "abhinav-shrivastava"
+  ],
+  "venue": "L3D Workshop, CVPR",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2406.06908"
+  },
+  "thumbnail": "http://www.cs.umd.edu/~sakshams/data/uvis.jpg",
+  "date": "2024-03"
+}

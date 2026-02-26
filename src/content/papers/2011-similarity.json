@@ -1,0 +1,30 @@
+{
+  "id": "similarity",
+  "title": "Data-driven Visual Similarity for Cross-domain Image Matching",
+  "authors": [
+    "abhinav-shrivastava",
+    {
+      "name": "Tomasz Malisiewicz",
+      "url": "http://people.csail.mit.edu/tomasz/"
+    },
+    "abhinav-gupta",
+    "alexei-a-efros"
+  ],
+  "venue": "SIGGRAPH Asia",
+  "year": 2011,
+  "tags": [
+    "oral"
+  ],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/shrivastava_sa11.txt",
+    "pdf": "http://graphics.cs.cmu.edu/projects/crossDomainMatching/abhinav-sa11.pdf",
+    "webpage": "http://graphics.cs.cmu.edu/projects/crossDomainMatching/",
+    "code": "http://graphics.cs.cmu.edu/projects/crossDomainMatching/#code",
+    "video": "http://graphics.cs.cmu.edu/projects/crossDomainMatching/#videos",
+    "supplement": "http://graphics.cs.cmu.edu/projects/crossDomainMatching/#supplement",
+    "data": "http://graphics.cs.cmu.edu/projects/crossDomainMatching/#data",
+    "slides": "http://graphics.cs.cmu.edu/projects/crossDomainMatching/#ppt"
+  },
+  "thumbnail": "images/imgMatch1.png",
+  "date": "2011-08"
+}

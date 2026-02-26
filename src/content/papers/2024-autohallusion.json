@@ -1,0 +1,50 @@
+{
+  "id": "autohallusion",
+  "title": "AutoHallusion: Automatic Generation of Hallucination Benchmarks for Vision-Language Models",
+  "authors": [
+    {
+      "name": "Xiyang Wu"
+    },
+    {
+      "name": "Tianrui Guan"
+    },
+    {
+      "name": "Dianqi Li"
+    },
+    "shuaiyi-huang",
+    {
+      "name": "Xiaoyu Liu"
+    },
+    {
+      "name": "Xijun Wang"
+    },
+    {
+      "name": "Ruiqi Xian"
+    },
+    "abhinav-shrivastava",
+    {
+      "name": "Furong Huang"
+    },
+    {
+      "name": "Jordan Boyd-Graber",
+      "url": "http://users.umiacs.umd.edu/~jbg/"
+    },
+    {
+      "name": "Tianyi Zhou"
+    },
+    {
+      "name": "Dinesh Manocha",
+      "url": "https://www.cs.umd.edu/~dmanocha/"
+    }
+  ],
+  "venue": "EMNLP Findings",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2406.10900",
+    "webpage": "https://wuxiyang1996.github.io/autohallusion_page/",
+    "code": "https://github.com/wuxiyang1996/AutoHallusion"
+  },
+  "thumbnail": null,
+  "date": "2024-10"
+}

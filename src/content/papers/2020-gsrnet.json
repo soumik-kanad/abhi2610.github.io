@@ -1,0 +1,32 @@
+{
+  "id": "GSRNet",
+  "title": "Generate, Segment and Refine: Towards Generic Manipulation Segmentation",
+  "authors": [
+    {
+      "name": "Peng Zhou",
+      "url": "https://pengzhou1108.github.io/"
+    },
+    {
+      "name": "Bor-Chun Chen"
+    },
+    {
+      "name": "Xintong Han"
+    },
+    {
+      "name": "Mahyar Najibi"
+    },
+    "abhinav-shrivastava",
+    "ser-nam-lim",
+    "larry-davis"
+  ],
+  "venue": "AAAI",
+  "year": 2020,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/zhou2020generate.txt",
+    "pdf": "https://arxiv.org/pdf/1811.09729.pdf",
+    "code": "https://github.com/pengzhou1108/GSRNet"
+  },
+  "thumbnail": "images/zhou2020generate.png",
+  "date": "2019-09"
+}

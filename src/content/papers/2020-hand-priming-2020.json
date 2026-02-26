@@ -1,0 +1,27 @@
+{
+  "id": "hand-priming-2020",
+  "title": "Hand-Priming in Object Localization for Assistive Egocentric Vision",
+  "authors": [
+    {
+      "name": "Kyungjun Lee",
+      "url": "https://www.cs.umd.edu/~kjlee/"
+    },
+    "abhinav-shrivastava",
+    {
+      "name": "Hernisa Kacorri"
+    }
+  ],
+  "venue": "WACV",
+  "year": 2020,
+  "tags": [
+    "oral",
+    "best paper award"
+  ],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/lee2020hand.txt",
+    "pdf": "https://arxiv.org/pdf/2002.12557.pdf",
+    "video": "https://www.youtube.com/watch?v=ugjg3mmVQWU&feature=youtu.be"
+  },
+  "thumbnail": "images/handpriming.png",
+  "date": "2019-10"
+}

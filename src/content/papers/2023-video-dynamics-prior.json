@@ -1,0 +1,17 @@
+{
+  "id": "video-dynamics-prior",
+  "title": "Video Dynamics Prior: An Internal Learning Approach for Robust Video Enhancements",
+  "authors": [
+    "gaurav-shrivastava",
+    "abhinav-shrivastava"
+  ],
+  "venue": "NeurIPS",
+  "year": 2023,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2312.07835",
+    "webpage": "http://www.cs.umd.edu/~gauravsh/vdp.html"
+  },
+  "thumbnail": null,
+  "date": "2023-09"
+}

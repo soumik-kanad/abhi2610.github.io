@@ -1,0 +1,18 @@
+{
+  "id": "simd",
+  "title": "HOG and Spatial Convolution on SIMD Architecture",
+  "authors": [
+    "ishan-misra",
+    "abhinav-shrivastava",
+    "martial-hebert"
+  ],
+  "venue": "CMU Technical Report",
+  "year": 2013,
+  "tags": [],
+  "links": {
+    "pdf": "http://www.cs.cmu.edu/~imisra/projects/simd-hog-tech-report.pdf",
+    "code": "https://github.com/imisra/esvmTestCPP"
+  },
+  "thumbnail": "images/simd.png",
+  "date": "2013-06"
+}

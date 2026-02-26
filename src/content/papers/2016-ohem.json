@@ -1,0 +1,27 @@
+{
+  "id": "OHEM",
+  "title": "Training Region-based Object Detectors with Online Hard Example Mining",
+  "authors": [
+    "abhinav-shrivastava",
+    "abhinav-gupta",
+    {
+      "name": "Ross Girshick",
+      "url": "http://rossgirshick.info"
+    }
+  ],
+  "venue": "CVPR",
+  "year": 2016,
+  "tags": [
+    "oral"
+  ],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/ohem_cvpr16.txt",
+    "pdf": "http://arxiv.org/pdf/1604.03540",
+    "code": "https://github.com/abhi2610/ohem",
+    "video": "https://www.youtube.com/watch?v=fvXehzXgZ3U",
+    "poster": "https://www.cs.umd.edu/~abhinav/papers/posters/ohem.pdf",
+    "slides": "https://drive.google.com/uc?export=download&id=0B1bvF_UrhQBSSUtja0tDYkp0SDA"
+  },
+  "thumbnail": "images/ohem.png",
+  "date": "2016-02"
+}

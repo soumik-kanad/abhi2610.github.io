@@ -1,0 +1,20 @@
+{
+  "id": "latent-inr",
+  "title": "Latent-INR: A Flexible Framework for Implicit Representations of Videos with Discriminative Semantics",
+  "authors": [
+    "shishira-maiya",
+    "anubhav",
+    "matt-gwilliam",
+    "max-ehrlich",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ECCV",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2408.02672",
+    "webpage": "https://www.cs.umd.edu/~shishira/latent_inr/latent_inr.html"
+  },
+  "thumbnail": "https://www.cs.umd.edu/~shishira/latent_inr/latent_inr_teaser.png",
+  "date": "2024-07"
+}

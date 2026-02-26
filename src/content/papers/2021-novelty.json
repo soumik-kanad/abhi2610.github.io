@@ -1,0 +1,55 @@
+{
+  "id": "Novelty",
+  "title": "A Unifying Framework for Formal Theories of Novelty",
+  "authors": [
+    {
+      "name": "Terrance E. Boult"
+    },
+    {
+      "name": "Przemyslaw A. Grabowicz"
+    },
+    {
+      "name": "Derek S. Prijatelj"
+    },
+    {
+      "name": "Roni Stern"
+    },
+    {
+      "name": "Lawrence Holder"
+    },
+    {
+      "name": "Joshua Alspector"
+    },
+    {
+      "name": "Mohsen Jafarzadeh"
+    },
+    {
+      "name": "Touqeer Ahmad"
+    },
+    {
+      "name": "Akshay Raj Dhamija"
+    },
+    {
+      "name": "Chunchun Li"
+    },
+    {
+      "name": "Steve Cruz"
+    },
+    "abhinav-shrivastava",
+    "carl-vondrick",
+    {
+      "name": "Walter J. Scheirer"
+    }
+  ],
+  "venue": "AAAI",
+  "year": 2021,
+  "tags": [
+    "BlueSky talk"
+  ],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/boult2021towards.txt",
+    "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/17766/17573"
+  },
+  "thumbnail": "images/funcgen.png",
+  "date": "2020-09"
+}

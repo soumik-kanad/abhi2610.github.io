@@ -1,0 +1,21 @@
+{
+  "id": "JPEGQuant",
+  "title": "Quantization Guided JPEG Artifact Correction",
+  "authors": [
+    "max-ehrlich",
+    "ser-nam-lim",
+    "larry-davis",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ECCV",
+  "year": 2020,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/ehrlich2020quant.txt",
+    "pdf": "https://arxiv.org/abs/2004.09320",
+    "code": "https://gitlab.com/Queuecumber/quantization-guided-ac",
+    "video": "https://www.youtube.com/watch?v=cNh98WGClG8"
+  },
+  "thumbnail": "images/jpegquant.png",
+  "date": "2020-07"
+}

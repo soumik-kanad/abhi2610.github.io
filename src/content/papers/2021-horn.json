@@ -1,0 +1,21 @@
+{
+  "id": "HORN",
+  "title": "Hierarchical Video Prediction for Human Object Interaction",
+  "authors": [
+    "navaneeth-bodla",
+    "gaurav-shrivastava",
+    "rama-chellappa",
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2021,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/bodla2021hierarchical.txt",
+    "pdf": "https://horn-video.github.io/camera_ready.pdf",
+    "webpage": "https://horn-video.github.io/",
+    "video": "https://www.youtube.com/watch?v=AKXvQMY8ayQ"
+  },
+  "thumbnail": "https://horn-video.github.io/gifs/ex3rgb.gif",
+  "date": "2021-02"
+}

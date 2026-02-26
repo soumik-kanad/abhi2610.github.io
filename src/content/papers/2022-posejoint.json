@@ -1,0 +1,32 @@
+{
+  "id": "posejoint",
+  "title": "Pose And Joint-Aware Action Recognition",
+  "authors": [
+    {
+      "name": "Anshul Shah"
+    },
+    {
+      "name": "Shlok Mishra"
+    },
+    {
+      "name": "Ankan Bansal",
+      "url": "https://ankanbansal.com/"
+    },
+    {
+      "name": "Jun-Cheng Chen"
+    },
+    "rama-chellappa",
+    "abhinav-shrivastava"
+  ],
+  "venue": "WACV",
+  "year": 2022,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/shah2022pose.txt",
+    "pdf": "https://arxiv.org/abs/2010.08164",
+    "video": "https://youtu.be/BqaOlF_LOMA",
+    "code": "https://github.com/anshulbshah/PoseAction"
+  },
+  "thumbnail": "https://anshulbshah.github.io/images/wacv_crop.png",
+  "date": "2021-10"
+}

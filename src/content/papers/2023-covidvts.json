@@ -1,0 +1,20 @@
+{
+  "id": "covidvts",
+  "title": "COVID-VTS: Fact Extraction and Verification on Short Video Platforms",
+  "authors": [
+    {
+      "name": "Fuxiao Liu",
+      "url": "https://fuxiaoliu.github.io/"
+    },
+    {
+      "name": "Yaser Yacoob"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "EACL",
+  "year": 2023,
+  "tags": [],
+  "links": {},
+  "thumbnail": "https://fuxiaoliu.github.io/resources/twitter.png",
+  "date": "2023-01"
+}

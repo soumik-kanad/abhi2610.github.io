@@ -1,0 +1,22 @@
+{
+  "id": "verigraph",
+  "title": "VeriGraph: Scene Graphs for Execution Verifiable Robot Planning",
+  "authors": [
+    "daniel-ekpo",
+    "archana-swaminathan",
+    "mara-levy",
+    "saksham-suri",
+    "chuong-huynh",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICRA",
+  "year": 2026,
+  "tags": [
+    "new"
+  ],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2411.10446"
+  },
+  "thumbnail": "https://mlevy2525.github.io/images/verigraph_teaser.jpg",
+  "date": "2026-01"
+}

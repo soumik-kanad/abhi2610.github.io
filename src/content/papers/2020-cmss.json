@@ -1,0 +1,22 @@
+{
+  "id": "CMSS",
+  "title": "Curriculum Manager for Source Selection in Multi-Source Domain Adaptation",
+  "authors": [
+    "luyu-yang",
+    {
+      "name": "Yogesh Balaji",
+      "url": "http://www.cs.umd.edu/~yogesh/"
+    },
+    "ser-nam-lim",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ECCV",
+  "year": 2020,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/yang2020Curriculum.txt",
+    "pdf": "https://arxiv.org/abs/2007.01261"
+  },
+  "thumbnail": "images/cmss.png",
+  "date": "2020-07"
+}

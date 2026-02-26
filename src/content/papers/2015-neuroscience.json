@@ -1,0 +1,31 @@
+{
+  "id": "neuroscience",
+  "title": "Applying artificial vision models to human scene understanding",
+  "authors": [
+    {
+      "name": "Elissa M. Aminoff",
+      "url": "http://tarrlabwiki.cnbc.cmu.edu/index.php/Aminoff"
+    },
+    {
+      "name": "Mariya Toneva",
+      "url": "http://loop.frontiersin.org/people/205863/overview"
+    },
+    "abhinav-shrivastava",
+    "xinlei-chen",
+    "ishan-misra",
+    "abhinav-gupta",
+    {
+      "name": "Michael Tarr",
+      "url": "http://www.psy.cmu.edu/people/tarr.html"
+    }
+  ],
+  "venue": "Frontiers in Computational Neuroscience",
+  "year": 2015,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/artificial_models_frontiers15.txt",
+    "pdf": "http://journal.frontiersin.org/Journal/10.3389/fncom.2015.00008/pdf"
+  },
+  "thumbnail": "images/fmri.png",
+  "date": "2015-06"
+}

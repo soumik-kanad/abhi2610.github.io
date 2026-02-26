@@ -1,0 +1,27 @@
+{
+  "id": "SCorrSAN",
+  "title": "Learning Semantic Correspondence with Sparse Annotations",
+  "authors": [
+    "shuaiyi-huang",
+    "luyu-yang",
+    "bo-he",
+    {
+      "name": "Songyang Zhang"
+    },
+    {
+      "name": "Xuming He"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "ECCV",
+  "year": 2022,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/huang2022learning.txt",
+    "pdf": "https://arxiv.org/abs/2208.06974",
+    "webpage": "https://shuaiyihuang.github.io/publications/SCorrSAN/",
+    "code": "https://github.com/shuaiyihuang/SCorrSAN"
+  },
+  "thumbnail": "images/semcorr_teaser.png",
+  "date": "2022-07"
+}

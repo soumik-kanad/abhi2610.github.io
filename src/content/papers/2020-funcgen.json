@@ -1,0 +1,22 @@
+{
+  "id": "funcgen",
+  "title": "Detecting Human-Object Interactions via Functional Generalization",
+  "authors": [
+    {
+      "name": "Ankan Bansal",
+      "url": "https://ankanbansal.com/"
+    },
+    "saketh-rambhatla",
+    "abhinav-shrivastava",
+    "rama-chellappa"
+  ],
+  "venue": "AAAI",
+  "year": 2020,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/bansal2020detecting.txt",
+    "pdf": "https://arxiv.org/pdf/1904.03181.pdf"
+  },
+  "thumbnail": "images/funcgen.png",
+  "date": "2019-09"
+}

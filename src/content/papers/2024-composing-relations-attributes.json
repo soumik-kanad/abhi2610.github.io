@@ -1,0 +1,19 @@
+{
+  "id": "composing-relations-attributes",
+  "title": "Composing Object Relations and Attributes for Image-Text Matching",
+  "authors": [
+    "khoi-pham",
+    "chuong-huynh",
+    "ser-nam-lim",
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2406.11820",
+    "code": "https://github.com/vkhoi/cora_cvpr24"
+  },
+  "thumbnail": "https://hmchuong.github.io/images/thumb_cvpr24_cora.jpg",
+  "date": "2024-02"
+}

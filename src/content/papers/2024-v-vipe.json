@@ -1,0 +1,17 @@
+{
+  "id": "v-vipe",
+  "title": "V-VIPE: Variational View Invariant Pose Embedding",
+  "authors": [
+    "mara-levy",
+    "abhinav-shrivastava"
+  ],
+  "venue": "RHOI Workshop, CVPR",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2407.07092",
+    "webpage": "https://v-vipe.github.io/"
+  },
+  "thumbnail": "https://mlevy2525.github.io/images/VVIPE_Teaser.png",
+  "date": "2024-03"
+}

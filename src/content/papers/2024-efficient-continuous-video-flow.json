@@ -1,0 +1,16 @@
+{
+  "id": "efficient-continuous-video-flow",
+  "title": "Efficient Continuous Video Flow Model for Video Prediction",
+  "authors": [
+    "gaurav-shrivastava",
+    "abhinav-shrivastava"
+  ],
+  "venue": "arXiv",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2412.05633"
+  },
+  "thumbnail": "http://www.cs.umd.edu/~gauravsh/teasers/pipeline1.png",
+  "date": "2024-12"
+}

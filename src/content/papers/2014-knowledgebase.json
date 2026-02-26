@@ -1,0 +1,22 @@
+{
+  "id": "knowledgebase",
+  "title": "Enriching Visual Knowledge Bases via Object Discovery and Segmentation",
+  "authors": [
+    "xinlei-chen",
+    "abhinav-shrivastava",
+    "abhinav-gupta"
+  ],
+  "venue": "CVPR",
+  "year": 2014,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/discover_seg_cvpr14.txt",
+    "pdf": "http://xinleic.xyz/papers/cvpr14.pdf",
+    "webpage": "http://xinleic.xyz/seg.html",
+    "code": "https://github.com/endernewton/subdiscover",
+    "poster": "https://www.cs.umd.edu/~abhinav/papers/posters/discovery_segmentation.pdf",
+    "supplement": "http://xinleic.xyz/data/clusterVis.pdf"
+  },
+  "thumbnail": "images/neil-seg.png",
+  "date": "2014-02"
+}

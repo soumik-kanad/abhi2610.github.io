@@ -1,0 +1,27 @@
+{
+  "id": "DepthComplete",
+  "title": "Depth Completion using a View-constrained Deep Prior",
+  "authors": [
+    "pallabi-ghosh",
+    {
+      "name": "Vibhav Vineet"
+    },
+    "larry-davis",
+    "abhinav-shrivastava",
+    {
+      "name": "Sudipta Sinha"
+    },
+    {
+      "name": "Neel Joshi"
+    }
+  ],
+  "venue": "3DV",
+  "year": 2020,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/ghosh2020deep.txt",
+    "pdf": "https://arxiv.org/abs/2001.07791"
+  },
+  "thumbnail": "images/depthcomplete.png",
+  "date": "2020-07"
+}

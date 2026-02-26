@@ -1,0 +1,23 @@
+{
+  "id": "trajectory-aligned-tokens",
+  "title": "Trajectory-aligned Space-time Tokens for Few-shot Action Recognition",
+  "authors": [
+    "pulkit-kumar",
+    "namitha-padmanabhan",
+    {
+      "name": "Luke Luo"
+    },
+    "saketh-rambhatla",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ECCV",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2407.18249",
+    "webpage": "https://www.cs.umd.edu/~pulkit/tats/",
+    "code": "https://github.com/pulkitkumar95/tats"
+  },
+  "thumbnail": "https://www.cs.umd.edu/~pulkit/tats/static/images/framework.png",
+  "date": "2024-07"
+}

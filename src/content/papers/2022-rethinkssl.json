@@ -1,0 +1,19 @@
+{
+  "id": "rethinkssl",
+  "title": "Rethinking Pseudo Labels for Semi-Supervised Object Detection",
+  "authors": [
+    "hengduo-li",
+    "zuxuan-wu",
+    "abhinav-shrivastava",
+    "larry-davis"
+  ],
+  "venue": "AAAI",
+  "year": 2022,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/li2021rethinking.txt",
+    "pdf": "https://arxiv.org/abs/2106.00168"
+  },
+  "thumbnail": "images/rethinkssl.png",
+  "date": "2021-09"
+}

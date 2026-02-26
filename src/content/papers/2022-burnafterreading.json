@@ -1,0 +1,31 @@
+{
+  "id": "BurnAfterReading",
+  "title": "Burn After Reading: Online Adaptation for Cross-domain Streaming Data",
+  "authors": [
+    "luyu-yang",
+    {
+      "name": "Mingfei Gao"
+    },
+    {
+      "name": "Zeyuan Chen"
+    },
+    {
+      "name": "Ran Xu"
+    },
+    "abhinav-shrivastava",
+    {
+      "name": "Chetan Ramaiah"
+    }
+  ],
+  "venue": "ECCV",
+  "year": 2022,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/yang2022burn.txt",
+    "pdf": "https://arxiv.org/abs/2112.04345",
+    "webpage": "https://www.loyo.me/projectpages/burnAfterReading/BurnAfterReading.html",
+    "code": "https://github.com/salesforce/burn-after-reading"
+  },
+  "thumbnail": "https://www.loyo.me/images/teaser_fig/Crodobo.png",
+  "date": "2022-07"
+}

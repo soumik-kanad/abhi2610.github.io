@@ -1,0 +1,79 @@
+---
+import { resolveAuthor } from '@utils/authors';
+
+interface Props {
+  name: string;
+  url?: string | null;
+  thesis?: string | null;
+  awards?: string[];
+  graduationYear?: number;
+  firstPosition?: { title?: string; org: string } | null;
+  currentPosition?: string | null;
+  positions?: string[] | null;
+  coAdvisor?: string | null;
+}
+
+const { name, url, thesis, awards = [], graduationYear, firstPosition, currentPosition, positions, coAdvisor } = Astro.props;
+const yearStr = graduationYear ? `'${String(graduationYear).slice(2)}` : '';
+const coAdvisorInfo = coAdvisor ? resolveAuthor(coAdvisor) : null;
+
+// Build trajectory display
+// positions array takes priority if present, otherwise fall back to first/current
+let trajectory: { orgs: string[]; abbreviated: boolean } = { orgs: [], abbreviated: false };
+
+if (positions && positions.length > 0) {
+  if (positions.length <= 3) {
+    // Show all hops
+    trajectory = { orgs: positions, abbreviated: false };
+  } else {
+    // 4+ hops: show first → ... → last
+    trajectory = { orgs: [positions[0], positions[positions.length - 1]], abbreviated: true };
+  }
+} else if (firstPosition || currentPosition) {
+  const first = firstPosition?.org;
+  const current = currentPosition;
+  if (first && current && first !== current) {
+    trajectory = { orgs: [first, current], abbreviated: false };
+  } else if (current || first) {
+    trajectory = { orgs: [current || first!], abbreviated: false };
+  }
+}
+---
+
+<div class="alumni-row">
+  <div class="alumni-left">
+    <div class="alumni-name">
+      {url ? <a href={url} target="_blank" rel="noopener">{name}</a> : name}
+    </div>
+    {thesis && <div class="alumni-thesis">{thesis}</div>}
+    {coAdvisorInfo && (
+      <div class="alumni-coadvisor">
+        co-advised with {coAdvisorInfo.url
+          ? <a href={coAdvisorInfo.url} target="_blank" rel="noopener">{coAdvisorInfo.name}</a>
+          : coAdvisorInfo.name}
+      </div>
+    )}
+    {awards.length > 0 && (
+      <div class="alumni-awards">
+        {awards.map(award => (
+          <span class="alumni-award">{award}</span>
+        ))}
+      </div>
+    )}
+  </div>
+  <div class="alumni-right">
+    {(yearStr || trajectory.orgs.length > 0) && (
+      <div class="alumni-placement">
+        {yearStr && <span class="year">🎓 {yearStr}</span>}
+        {trajectory.orgs.map((org, i) => (
+          <>
+            {trajectory.abbreviated && i === 1
+              ? <span class="arrow">→ ... →</span>
+              : <span class="arrow">→</span>}
+            <span class={i === trajectory.orgs.length - 1 ? 'company current-company' : 'company'}>{org}</span>
+          </>
+        ))}
+      </div>
+    )}
+  </div>
+</div>

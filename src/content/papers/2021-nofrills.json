@@ -1,0 +1,22 @@
+{
+  "id": "nofrills",
+  "title": "No-frills Dynamic Planning using Static Planners",
+  "authors": [
+    "mara-levy",
+    {
+      "name": "Vasista Ayyagari"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICRA",
+  "year": 2021,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/levy2021no.txt",
+    "pdf": "https://mlevy2525.github.io/files/DynamicPlanningAddOn.pdf",
+    "webpage": "https://mlevy2525.github.io/DynamicAddOn/",
+    "video": "https://www.youtube.com/watch?v=DfP0bJOIU5g"
+  },
+  "thumbnail": "https://mlevy2525.github.io/DynamicAddOn/img/static.gif",
+  "date": "2021-01"
+}

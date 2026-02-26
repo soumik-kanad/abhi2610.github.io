@@ -1,0 +1,223 @@
+/* ============================================
+   MOBILE MENU BUTTON
+   ============================================ */
+.mobile-menu-btn {
+  display: none;
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 200;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: var(--bg-card);
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-btn span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--text-primary);
+  border-radius: 1px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-btn.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.mobile-menu-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+.mobile-menu-btn.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 90;
+}
+
+.sidebar-overlay.visible {
+  display: block;
+}
+
+/* ============================================
+   REDUCED MOTION — accessibility
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================
+   TABLET — 769px to 1024px
+   ============================================ */
+@media (max-width: 1024px) {
+  :root {
+    --sidebar-width: 220px;
+  }
+
+  .page {
+    padding: 56px 48px 64px;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  .people-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+/* ============================================
+   MOBILE — 768px and below
+   ============================================ */
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), background 0.4s ease;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .page {
+    padding: 60px 24px 64px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 48px;
+  }
+
+  .pub-card {
+    gap: 16px;
+  }
+
+  .pub-thumb {
+    width: 120px;
+    min-width: 120px;
+    height: auto;
+  }
+
+  .people-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .alumni-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .alumni-right {
+    text-align: left;
+  }
+
+  .press-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .news-item {
+    gap: 12px;
+  }
+
+  .news-date {
+    min-width: 72px;
+  }
+
+  .funding-row {
+    gap: 16px;
+  }
+
+  .funding-name {
+    min-width: 72px;
+  }
+
+  /* Bio page */
+  .bio-header {
+    max-width: 100%;
+  }
+
+  .bio-text {
+    max-width: 100%;
+  }
+}
+
+/* ============================================
+   SMALL PHONE — 480px and below
+   ============================================ */
+@media (max-width: 480px) {
+  .page {
+    padding: 56px 16px 48px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .people-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .news-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .news-date {
+    min-width: auto;
+  }
+
+  .funding-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .funding-name {
+    min-width: auto;
+  }
+
+  .pub-thumb {
+    width: 80px;
+    min-width: 80px;
+  }
+}

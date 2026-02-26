@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+
+# Claude Code
+.claude/
+CLAUDE.md
+
+# Reference files (old site, CV, prototype)
+reference/
+
+# Stale workspace files
+data/
+*.code-workspace
+
+# Internal planning docs
+docs/plans/
+docs/MAINTENANCE.md

@@ -1,0 +1,126 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+import Sidebar from '@components/Sidebar.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Abhinav Shrivastava',
+  description = 'Abhinav Shrivastava — Associate Professor of Computer Science at the University of Maryland and Co-Founder & CEO of a stealth startup building next-gen AI-native video infrastructure. Computer vision, machine learning, and robotics.',
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL('/images/abhinav.jpg', Astro.site);
+---
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <link rel="canonical" href={canonicalURL}>
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website">
+  <meta property="og:url" content={canonicalURL}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:image" content={ogImage}>
+  <meta property="og:site_name" content="Abhinav Shrivastava">
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@abhi2610">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={ogImage}>
+
+  {/* Additional SEO */}
+  <meta name="author" content="Abhinav Shrivastava">
+  <meta name="robots" content="index, follow">
+  <link rel="sitemap" href="/sitemap-index.xml">
+
+  {/* Structured Data — Person */}
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abhinav Shrivastava",
+    "url": "https://abhinavsh.info",
+    "image": "https://abhinavsh.info/images/abhinav.jpg",
+    "jobTitle": ["Associate Professor", "Co-Founder & CEO"],
+    "worksFor": [
+      { "@type": "Organization", "name": "University of Maryland, College Park" },
+    ],
+    "affiliation": { "@type": "Organization", "name": "University of Maryland, College Park" },
+    "alumniOf": [
+      { "@type": "Organization", "name": "Carnegie Mellon University" },
+      { "@type": "Organization", "name": "JIIT" },
+    ],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=mIF9BowAAAAJ",
+      "https://www.linkedin.com/in/abhi2610",
+      "https://x.com/abhi2610",
+      "https://www.semanticscholar.org/author/1781242",
+    ],
+    "knowsAbout": ["Computer Vision", "Machine Learning", "Robotics", "Deep Learning"],
+  })} />
+
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  {/* Flash-free theme loading */}
+  <script is:inline>
+    (function() {
+      var saved = localStorage.getItem('theme');
+      if (saved) {
+        document.documentElement.setAttribute('data-theme', saved);
+      }
+    })();
+  </script>
+
+  <ViewTransitions />
+</head>
+<body>
+  <div class="layout">
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <Sidebar />
+
+    <main class="content">
+      <div class="page">
+        <div class="stagger">
+          <slot />
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    import '../scripts/theme';
+    import '../scripts/mobile-menu';
+    import '../scripts/scroll-spy';
+    import '../scripts/easter-eggs';
+    import '../scripts/nav-active';
+    import '../scripts/bibtex';
+  </script>
+</body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+  @import '../styles/sidebar.css';
+  @import '../styles/publications.css';
+  @import '../styles/group.css';
+  @import '../styles/teaching.css';
+  @import '../styles/awards.css';
+  @import '../styles/animations.css';
+  @import '../styles/responsive.css';
+</style>

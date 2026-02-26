@@ -1,0 +1,23 @@
+{
+  "id": "ChopLearn",
+  "title": "Chop & Learn: Recognizing and Generating Object-State Compositions",
+  "authors": [
+    "nirat-saini",
+    "hanyu-wang",
+    "archana-swaminathan",
+    "vinoj-jayasundara",
+    "bo-he",
+    "kamal-gupta",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICCV",
+  "year": 2023,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2309.14339",
+    "webpage": "https://chopnlearn.github.io/",
+    "data": "https://drive.google.com/drive/folders/1QylDeUJ8h-CjLRJ8Z9bsdCoQ2uMs59W_"
+  },
+  "thumbnail": "https://www.cs.umd.edu/~nirat/web_images/chopnlearn.jpg",
+  "date": "2023-07"
+}

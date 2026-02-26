@@ -1,0 +1,23 @@
+{
+  "id": "Knowledge",
+  "title": "Knowledge Evolution in Neural Networks",
+  "authors": [
+    "ahmed-taha",
+    "abhinav-shrivastava",
+    "larry-davis"
+  ],
+  "venue": "CVPR",
+  "year": 2021,
+  "tags": [
+    "oral"
+  ],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/taha2021knowledge.txt",
+    "pdf": "https://arxiv.org/abs/2103.05152",
+    "webpage": "https://ahmdtaha.github.io/paper/cvpr_ahmed_knowledge",
+    "code": "https://github.com/ahmdtaha/knowledge_evolution",
+    "blog": "https://ahmdtaha.medium.com/knowledge-evolution-in-neural-networks-cfdfc1510581"
+  },
+  "thumbnail": "https://github.com/ahmdtaha/knowledge_evolution/raw/main/imgs/cvpr_2021.gif",
+  "date": "2021-02"
+}

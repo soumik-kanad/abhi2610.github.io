@@ -1,0 +1,187 @@
+---
+import Layout from '@layouts/Layout.astro';
+import PersonCard from '@components/PersonCard.astro';
+import AlumniRow from '@components/AlumniRow.astro';
+import people from '@data/people.json';
+import otherMembers from '@data/other_members.json';
+
+const peopleData = people as Record<string, any>;
+const entries = Object.entries(peopleData);
+
+// Current students (PhD + MS, status=current, not self/collaborator)
+const studentRoles = new Set(['phd-student', 'ms-student', 'undergrad', 'visiting']);
+const currentStudents = entries
+  .filter(([_, p]) => p.status === 'current' && studentRoles.has(p.role))
+  .sort((a, b) => (a[1].start_year || 0) - (b[1].start_year || 0));
+
+// PhD Alumni (graduated PhD students)
+const phdAlumni = entries
+  .filter(([_, p]) => p.status === 'graduated' && p.role === 'phd-student')
+  .sort((a, b) => (b[1].graduation_year || 0) - (a[1].graduation_year || 0));
+
+// Post-docs
+const postdocs = entries
+  .filter(([_, p]) => p.role === 'postdoc')
+  .sort((a, b) => (b[1].graduation_year || 0) - (a[1].graduation_year || 0));
+
+// MS Alumni: explicit ms-students + PhD students who also did MS
+const msOnly = entries
+  .filter(([_, p]) => p.status === 'graduated' && p.role === 'ms-student');
+const alsoMs = entries
+  .filter(([_, p]) => p.also_ms);
+const msAlumni = [...alsoMs, ...msOnly].map(([_, p]) => p);
+
+const { undergrad_interns, highschool_interns } = otherMembers as any;
+---
+
+<Layout title="Group — Abhinav Shrivastava" description="Perception and Intelligence (PI) Lab at UMD. Current PhD students, alumni placements at top labs and universities.">
+  <h1>Perception and Intelligence (PI) Lab</h1>
+  <p class="lab-mission">We equip machines with perception abilities, enabling them to understand, interact with, and respond to their environment. We work broadly across computer vision, machine learning, and robotics.</p>
+
+  <h2 class="section-anchor" id="group-current">Current Students</h2>
+  <div class="people-grid">
+    {currentStudents.map(([_, person]) => (
+      <PersonCard
+        name={person.name}
+        url={person.url}
+        photo={person.photo}
+        role={person.role}
+        startYear={person.start_year}
+        tagline={person.tagline}
+        coAdvisor={person.co_advisor_display}
+      />
+    ))}
+  </div>
+  <p class="prospective-note"><strong>Prospective students</strong>: I am not actively looking for new PhD students beyond those I am already in touch with. That said, the broader CV group admits PhD students in computer vision, machine learning, and related fields every year. Learn more about the <a href="https://www.cs.umd.edu/grad" target="_blank" rel="noopener">graduate program</a> and our outstanding <a href="https://www.cs.umd.edu/research-area/computer-vision-and-machine-perception" target="_blank" rel="noopener">CV faculty</a>.</p>
+
+  <h2 class="section-anchor" id="group-alumni">PhD Alumni</h2>
+  <div class="alumni-list">
+    {phdAlumni.map(([_, person]) => (
+      <AlumniRow
+        name={person.name}
+        url={person.url}
+        thesis={person.thesis}
+        awards={person.awards}
+        graduationYear={person.graduation_year}
+        firstPosition={person.first_position}
+        currentPosition={person.current_position?.org || person.currentPosition}
+        positions={person.positions}
+        coAdvisor={person.co_advisor}
+      />
+    ))}
+  </div>
+
+  {postdocs.length > 0 && (
+    <>
+      <h2 class="section-anchor sub" id="group-postdoc">Post-doctoral Researchers</h2>
+      <div class="compact-list">
+        {postdocs.map(([_, person]) => (
+          <div class="compact-item">
+            {person.url
+              ? <a href={person.url} target="_blank" rel="noopener">{person.name}</a>
+              : <span>{person.name}</span>}
+            {person.currentPosition && <span class="compact-note">→ {person.currentPosition}</span>}
+          </div>
+        ))}
+      </div>
+    </>
+  )}
+
+  <h2 class="section-anchor sub" id="group-ms">MS Alumni</h2>
+  <div class="compact-list">
+    {msAlumni.map(person => {
+      // Build display parts
+      const awards = person.awards?.length ? `(${person.awards.join(', ')})` : null;
+      let note: string | null = null;
+      if (person.role === 'phd-student') {
+        note = 'PhD at UMD';
+      } else if (person.currentPosition) {
+        note = person.currentPosition;
+      }
+      return (
+        <div class="compact-item">
+          {person.url
+            ? <a href={person.url} target="_blank" rel="noopener">{person.name}</a>
+            : <span>{person.name}</span>}
+          {person.memorial && <span class="memorial-note">You're missed, Vinoj.</span>}
+          {awards && <span class="compact-award">{awards}</span>}
+          {note && <span class="compact-note">→ {note}</span>}
+        </div>
+      );
+    })}
+  </div>
+
+  <h2 class="section-anchor sub" id="group-undergrad">Undergraduate Interns</h2>
+  <div class="compact-list">
+    {undergrad_interns.map((m: any) => (
+      <div class="compact-item">
+        {m.url
+          ? <a href={m.url} target="_blank" rel="noopener">{m.name}</a>
+          : <span>{m.name}</span>}
+        {m.award && <span class="compact-award">({m.award})</span>}
+        {m.note && !m.trajectory && <span class="compact-note">({m.note})</span>}
+        {m.trajectory && m.trajectoryNote
+          ? <span class="compact-note">({m.note}) → {m.trajectoryNote}</span>
+          : m.trajectory && m.note
+            ? <span class="compact-note">→ {m.note}</span>
+            : null}
+      </div>
+    ))}
+  </div>
+
+  <h2 class="section-anchor sub" id="group-highschool">High School Interns</h2>
+  <div class="compact-list">
+    {highschool_interns.map((m: any) => (
+      <div class="compact-item">
+        {m.url
+          ? <a href={m.url} target="_blank" rel="noopener">{m.name}</a>
+          : <span>{m.name}</span>}
+        {m.note && !m.trajectory && <span class="compact-note">({m.note})</span>}
+        {m.trajectory && m.trajectoryNote
+          ? <span class="compact-note">({m.note}) → {m.trajectoryNote}</span>
+          : m.trajectory && m.note
+            ? <span class="compact-note">→ {m.note}</span>
+            : null}
+      </div>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  .lab-mission {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--text-secondary);
+    line-height: 1.75;
+    max-width: none;
+    margin-bottom: 0;
+  }
+
+  .lab-mission + :global(h2) {
+    margin-top: 36px;
+  }
+
+  .prospective-note {
+    font-size: 0.88rem;
+    font-weight: 300;
+    color: var(--text-tertiary);
+    line-height: 1.75;
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+
+  .prospective-note strong {
+    font-weight: 500;
+    color: var(--text-secondary);
+  }
+
+  .prospective-note :global(a) {
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .prospective-note :global(a:hover) {
+    color: var(--accent-gold);
+  }
+</style>

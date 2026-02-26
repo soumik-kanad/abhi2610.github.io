@@ -1,0 +1,21 @@
+{
+  "id": "StEP",
+  "title": "Style-based Encoder Pre-training for Multi-modal Image Synthesis",
+  "authors": [
+    "moustafa-meshry",
+    "yixuan-ren",
+    "larry-davis",
+    "abhinav-shrivastava"
+  ],
+  "venue": "CVPR",
+  "year": 2021,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/meshry2021step.txt",
+    "pdf": "https://www.cs.umd.edu/~mmeshry/projects/step/resources/step_cvpr2021-full.pdf",
+    "webpage": "https://www.cs.umd.edu/~mmeshry/projects/step/",
+    "code": "https://github.com/MoustafaMeshry/StEP"
+  },
+  "thumbnail": "images/StEP.gif",
+  "date": "2021-02"
+}

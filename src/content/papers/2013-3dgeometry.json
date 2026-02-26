@@ -1,0 +1,18 @@
+{
+  "id": "3dgeometry",
+  "title": "Building Part-based Object Detectors via 3D Geometry",
+  "authors": [
+    "abhinav-shrivastava",
+    "abhinav-gupta"
+  ],
+  "venue": "ICCV",
+  "year": 2013,
+  "tags": [],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/gdpm_iccv13.txt",
+    "pdf": "http://graphics.cs.cmu.edu/projects/gdpm/gDPM.pdf",
+    "webpage": "http://graphics.cs.cmu.edu/projects/gdpm/"
+  },
+  "thumbnail": "images/gdpm.png",
+  "date": "2013-07"
+}

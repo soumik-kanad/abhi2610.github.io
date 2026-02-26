@@ -1,0 +1,22 @@
+{
+  "id": "diff2lip",
+  "title": "Diff2Lip: Audio Conditioned Diffusion Models for Lip-Synchronization",
+  "authors": [
+    "soumik-mukhopadhyay",
+    "saksham-suri",
+    {
+      "name": "Ravi Teja Gadde"
+    },
+    "abhinav-shrivastava"
+  ],
+  "venue": "WACV",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2308.09716",
+    "webpage": "https://soumik-kanad.github.io/diff2lip/",
+    "code": "https://github.com/soumik-kanad/diff2lip"
+  },
+  "thumbnail": "https://soumik-kanad.github.io/assets/img/publication_preview/diff2lip.png",
+  "date": "2023-10"
+}

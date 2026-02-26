@@ -1,0 +1,29 @@
+{
+  "id": "Multiview",
+  "title": "Improved Modeling of 3D Shapes with Multi-view Depth Maps",
+  "authors": [
+    "kamal-gupta",
+    {
+      "name": "Susmija Jabbireddy"
+    },
+    {
+      "name": "Ketul Shah"
+    },
+    "abhinav-shrivastava",
+    "matthias-zwicker"
+  ],
+  "venue": "3DV",
+  "year": 2020,
+  "tags": [
+    "oral"
+  ],
+  "links": {
+    "bibtex": "https://www.cs.umd.edu/~abhinav/papers/bibtex/gupta2020improved.txt",
+    "pdf": "https://arxiv.org/abs/2009.03298",
+    "webpage": "https://kampta.github.io/multiview-shapes/",
+    "code": "https://github.com/kampta/multiview-shapes",
+    "video": "https://www.youtube.com/watch?v=dxZfornP_OY"
+  },
+  "thumbnail": "images/multiview.png",
+  "date": "2020-07"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "video-decomposition-prior",
+  "title": "Video Decomposition Prior: Editing Videos Layer by Layer",
+  "authors": [
+    "gaurav-shrivastava",
+    "ser-nam-lim",
+    "abhinav-shrivastava"
+  ],
+  "venue": "ICLR",
+  "year": 2024,
+  "tags": [],
+  "links": {
+    "pdf": "https://arxiv.org/abs/2412.04930",
+    "webpage": "https://www.cs.umd.edu/~gauravsh/video_decomposition/index.html"
+  },
+  "thumbnail": null,
+  "date": "2024-01"
+}
