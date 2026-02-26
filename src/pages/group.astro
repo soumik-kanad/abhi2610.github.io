@@ -31,7 +31,7 @@ const alsoMs = entries
   .filter(([_, p]) => p.also_ms);
 const msAlumni = [...alsoMs, ...msOnly].map(([_, p]) => p);
 
-const { undergrad_interns, highschool_interns } = otherMembers as any;
+const { visitors, undergrad_interns, highschool_interns } = otherMembers as any;
 ---
 
 <Layout title="Group — Abhinav Shrivastava" description="Perception and Intelligence (PI) Lab at UMD. Current PhD students, alumni placements at top labs and universities.">
@@ -119,6 +119,23 @@ const { undergrad_interns, highschool_interns } = otherMembers as any;
           ? <a href={m.url} target="_blank" rel="noopener">{m.name}</a>
           : <span>{m.name}</span>}
         {m.award && <span class="compact-award">({m.award})</span>}
+        {m.note && !m.trajectory && <span class="compact-note">({m.note})</span>}
+        {m.trajectory && m.trajectoryNote
+          ? <span class="compact-note">({m.note}) → {m.trajectoryNote}</span>
+          : m.trajectory && m.note
+            ? <span class="compact-note">→ {m.note}</span>
+            : null}
+      </div>
+    ))}
+  </div>
+
+  <h2 class="section-anchor sub" id="group-visitors">Visitors</h2>
+  <div class="compact-list">
+    {visitors.map((m: any) => (
+      <div class="compact-item">
+        {m.url
+          ? <a href={m.url} target="_blank" rel="noopener">{m.name}</a>
+          : <span>{m.name}</span>}
         {m.note && !m.trajectory && <span class="compact-note">({m.note})</span>}
         {m.trajectory && m.trajectoryNote
           ? <span class="compact-note">({m.note}) → {m.trajectoryNote}</span>

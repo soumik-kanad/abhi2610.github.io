@@ -1,10 +1,15 @@
 {
+  "visitors": [
+    { "name": "Archana Swaminathan", "trajectory": true, "note": "PhD at UMD", "url": "https://archana1998.github.io/" },
+    { "name": "Namitha Padmanabhan", "trajectory": true, "note": "MS at UMD", "url": "https://namithap10.github.io/" },
+    { "name": "Gaurav Shrivastava", "trajectory": true, "note": "MS at UMD", "url": "http://www.cs.umd.edu/~gauravsh/" },
+    { "name": "Yosuke Yamaguchi", "note": "Waseda University", "url": "https://scholar.google.com/citations?user=mjrafDkAAAAJ&hl=en&oi=ao" },
+    { "name": "Yubo Wang", "note": "Waseda University", "url": "https://waybob.sleepysheep.app/" }
+  ],
   "undergrad_interns": [
     { "name": "Anirud Aggarwal", "note": "Video AI Startup (Stealth)", "trajectory": true, "url": "https://aniaggarwal.github.io/", "award": "CRA Outstanding Undergraduate Researcher - Honorable Mention" },
     { "name": "Archit Kambhamettu", "note": "PhD at UMD", "trajectory": true, "url": "https://architkam.github.io/" },
-    { "name": "Archana Swaminathan", "note": "PhD at UMD", "trajectory": true, "url": "https://archana1998.github.io/" },
     { "name": "Vatsal Agarwal", "note": "PhD at UMD", "trajectory": true, "url": "https://vatsalag99.github.io/" },
-    { "name": "Namitha Padmanabhan", "note": "MS at UMD", "trajectory": true, "url": "https://namithap10.github.io/" },
     { "name": "Eric Zhu", "note": "MS at CMU", "trajectory": true, "url": "https://ericzhu718.github.io/" },
     { "name": "Anjali Gupta", "note": "Summer'23", "trajectory": true, "trajectoryNote": "PhD at NYU", "url": "https://anjaliwgupta.com/" },
     { "name": "Mukund Shankar", "note": "Summer'23-Spring'24", "trajectory": true, "trajectoryNote": "MS at UMD", "url": "https://mukundshankar-dev.github.io/" },
